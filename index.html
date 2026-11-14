@@ -19,11 +19,7 @@
       <div class="logo-circle">A</div>
       <span class="logo-text">ABDUL</span>
     </div>
-    <div class="nav-links">
-      <a href="#" id="nav-recipes">Recipes</a>
-      <a href="#">Saved</a>
-      <a href="#">Meal plan</a>
-    </div>
+    <!-- Nav links removed -->
   </nav>
 
   <!-- Home / Hero View -->
@@ -77,7 +73,6 @@
       const toast = document.createElement('div');
       toast.className = 'toast';
       
-      // If it's a summary toast (no recipe name), don't show the "Click to see" text
       const actionText = recipeName ? `<span class="toast-action">Click to see ingredients</span>` : '';
       
       toast.innerHTML = `
@@ -88,7 +83,6 @@
         </div>
       `;
       
-      // Click event for the toast
       toast.onclick = () => {
         if (recipeName) {
           send('recipe for ' + recipeName);
@@ -98,11 +92,8 @@
       };
 
       container.appendChild(toast);
-
-      // Animate in
       setTimeout(() => toast.classList.add('show'), 10);
 
-      // Auto-remove after 6 seconds
       const timer = setTimeout(() => {
         toast.classList.remove('show');
         setTimeout(() => toast.remove(), 300); 
@@ -168,7 +159,6 @@
         const d = await res.json();
         const m = addMsg('bot', d.reply);
         
-        // Clear previous toasts so they don't pile up from older searches
         document.getElementById('toast-container').innerHTML = '';
 
         const completeRecipes = [];
@@ -176,21 +166,17 @@
         (d.recipes || []).forEach(r => {
           m.appendChild(card(r, d.full));
           
-          // If the recipe has 0 missing ingredients, add it to the complete list
           if (r.missing && r.missing.length === 0) {
             completeRecipes.push(r.name);
           }
         });
 
-        // Show notifications for all complete recipes
         if (completeRecipes.length > 0) {
-          // Show up to 3 individual toasts so the screen isn't flooded
           const toShow = completeRecipes.slice(0, 3);
           toShow.forEach(name => {
             showToast(`You have all ingredients for ${name}!`, name);
           });
 
-          // If there are more than 3, show a summary toast for the rest
           if (completeRecipes.length > 3) {
             showToast(`And ${completeRecipes.length - 3} more recipes you can cook!`, null);
           }
@@ -266,7 +252,6 @@
     }
 
     document.getElementById('browse-btn').addEventListener('click', loadAllRecipes);
-    document.getElementById('nav-recipes').addEventListener('click', (e) => { e.preventDefault(); loadAllRecipes(); });
     document.getElementById('back-btn').addEventListener('click', goHome);
   </script>
 </body>
