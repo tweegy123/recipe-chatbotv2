@@ -3,29 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Recipe Finder</title>
+  <title>ABDUL - Recipe Finder</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="app">
-    <header>
-      <h1>Recipe Ni ABDUL MALIC Finder</h1>
-      <p>Tell me what you have. I will tell you what to cook.</p>
-    </header>
-    <section id="log" class="log" aria-live="polite"></section>
-    <div class="chips" id="chips">
-      <button>I have chicken, garlic and rice</button>
-      <button>Quick vegetarian meals</button>
-      <button>Recipe for pancakes</button>
-      <button>Surprise me</button> 
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-circle">A</div>
+      <span class="logo-text">ABDUL</span>
     </div>
-    <form id="form" class="composer">
-      <input id="input" type="text" placeholder="example/: I have eggs, tomato and cheese" autocomplete="off" maxlength="300" aria-label="Message">
-      <button type="submit">Send</button>
-    </form>
+    <div class="nav-links">
+      <a href="#">Recipes</a>
+      <a href="#">Saved</a>
+      <a href="#">Meal plan</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <main class="hero">
+    <h1>Cook something good<br>tonight.</h1>
+    <p>Browse thousands of recipes, or just ask ABDUL what to make with what you have.</p>
+    <button class="cta-button">Browse recipes</button>
   </main>
+
+  <!-- Floating Chat Widget -->
+  <div class="chat-widget">
+    <div class="chat-header">
+      <span class="chat-title">ABDUL</span>
+      <span class="chat-subtitle">Ask me for a recipe</span>
+    </div>
+    
+    <div id="log" class="log" aria-live="polite">
+      <!-- Messages will be injected here by JS -->
+    </div>
+
+    <div class="chips" id="chips">
+      <button>Under 15 min</button>
+      <button>Vegetarian</button>
+    </div>
+
+    <form id="form" class="composer">
+      <input id="input" type="text" placeholder="Ask for a recipe..." autocomplete="off" maxlength="300" aria-label="Message">
+      <!-- Send button is hidden as per UI design, pressing Enter sends the message -->
+      <button type="submit" style="display: none;">Send</button>
+    </form>
+  </div>
 
   <script>
     const log = document.getElementById('log');
@@ -38,7 +64,9 @@
       if (text !== undefined) e.textContent = text;
       return e;
     }
+    
     function scrollDown() { log.scrollTop = log.scrollHeight; }
+    
     function addMsg(who, text) {
       const m = el('div', 'msg ' + who);
       m.appendChild(el('p', null, text));
@@ -46,11 +74,13 @@
       scrollDown();
       return m;
     }
+
     function list(tag, items) {
       const l = el(tag);
       items.forEach(i => l.appendChild(el('li', null, i)));
       return l;
     }
+
     function card(r, full) {
       const c = el('article', 'card');
       c.appendChild(el('h3', null, r.name));
@@ -71,6 +101,7 @@
       }
       return c;
     }
+
     async function send(text) {
       addMsg('user', text);
       try {
@@ -88,6 +119,7 @@
       }
       scrollDown();
     }
+
     form.addEventListener('submit', e => {
       e.preventDefault();
       const t = input.value.trim();
@@ -95,10 +127,17 @@
       input.value = '';
       send(t);
     });
+
     document.getElementById('chips').addEventListener('click', e => {
-      if (e.target.tagName === 'BUTTON') send(e.target.textContent);
+      if (e.target.tagName === 'BUTTON') {
+        send(e.target.textContent);
+        // Optional: hide chips after clicking one
+        document.getElementById('chips').style.display = 'none'; 
+      }
     });
-    addMsg('bot', 'Hi! What ingredients do you have? Pick a suggestion below or type your own.');
+
+    // Initial Greeting matching your screenshot
+    addMsg('bot', 'Hi! What are you in the mood for tonight?');
   </script>
 </body>
 </html>
