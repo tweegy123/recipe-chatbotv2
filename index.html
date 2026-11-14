@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Notification Container (Bottom Left) -->
+  <div id="toast-container" class="toast-container"></div>
+
   <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="logo">
@@ -32,15 +35,13 @@
     </section>
   </main>
 
-  <!-- Browse All Recipes View (Hidden by default) -->
+  <!-- Browse All Recipes View -->
   <section id="browse-view" class="hidden">
     <div class="browse-header">
       <h2>All Recipes</h2>
       <button id="back-btn" class="cta-button outline">Back to Home</button>
     </div>
-    <div id="recipe-grid" class="recipe-grid">
-      <!-- Recipe cards will be injected here -->
-    </div>
+    <div id="recipe-grid" class="recipe-grid"></div>
   </section>
 
   <!-- Floating Chat Widget -->
@@ -67,6 +68,25 @@
     const log = document.getElementById('log');
     const form = document.getElementById('form');
     const input = document.getElementById('input');
+
+    // --- Toast Notification Logic ---
+    function showToast(message) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'toast';
+      // Checkmark emoji for success
+      toast.innerHTML = `<span>✅</span> ${message}`;
+      container.appendChild(toast);
+
+      // Trigger animation
+      setTimeout(() => toast.classList.add('show'), 10);
+
+      // Remove after 4 seconds
+      setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 300); // Wait for slide out animation
+      }, 4000);
+    }
 
     // --- Chat Logic ---
     function el(tag, cls, text) {
@@ -98,7 +118,8 @@
       c.appendChild(el('p', 'meta', `${r.time} min`));
       if (r.have) {
         if (r.have.length) c.appendChild(el('p', 'have', 'You have: ' + r.have.join(', ')));
-        c.appendChild(el('p', 'miss', r.missing.length ? 'Still need: ' + r.missing.join(', ') : 'You have everything.'));
+        // Updated missing text for clarity
+        c.appendChild(el('p', 'miss', r.missing.length ? 'Still need: ' + r.missing.join(', ') : 'You have everything!'));
       }
       if (full) {
         c.appendChild(el('h4', null, 'Ingredients'));
@@ -124,7 +145,19 @@
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const d = await res.json();
         const m = addMsg('bot', d.reply);
-        (d.recipes || []).forEach(r => m.appendChild(card(r, d.full)));
+        
+        let foundCompleteRecipe = false;
+
+        (d.recipes || []).forEach(r => {
+          m.appendChild(card(r, d.full));
+          
+          // Check if this recipe has NO missing ingredients
+          if (r.missing && r.missing.length === 0 && !foundCompleteRecipe) {
+            foundCompleteRecipe = true;
+            showToast(`You have all ingredients for ${r.name}!`);
+          }
+        });
+
       } catch (e) {
         addMsg('bot', 'Sorry, I cannot reach the server right now (' + e.message + ').');
       }
@@ -163,14 +196,11 @@
         if (!res.ok) throw new Error('Failed to fetch');
         const recipes = await res.json();
         
-        recipeGrid.innerHTML = ''; // Clear loading text
-
-        // Render each recipe in a grid card
+        recipeGrid.innerHTML = '';
         recipes.forEach(r => {
           const item = document.createElement('article');
           item.className = 'grid-card';
           
-          // Show first 4 ingredients in the preview
           const previewIngredients = r.ingredients.slice(0, 4).map(i => `<li>${i.qty} ${i.name}</li>`).join('');
           const moreText = r.ingredients.length > 4 ? `<li>...and more</li>` : '';
 
@@ -192,14 +222,11 @@
       homeView.classList.remove('hidden');
     }
 
-    // Trigger recipe lookup in the chat widget
     function askAbout(name) {
       send('recipe for ' + name);
-      // Optional: scroll chat log into view if on mobile
       document.querySelector('.chat-widget').scrollIntoView({ behavior: 'smooth' });
     }
 
-    // Event Listeners
     document.getElementById('browse-btn').addEventListener('click', loadAllRecipes);
     document.getElementById('nav-recipes').addEventListener('click', (e) => { e.preventDefault(); loadAllRecipes(); });
     document.getElementById('back-btn').addEventListener('click', goHome);

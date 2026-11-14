@@ -84,3 +84,56 @@ button.link { margin-top: 10px; background: none; border: 0; padding: 0; color: 
   .chat-widget { bottom: 0; right: 0; width: 100%; border-radius: 16px 16px 0 0; }
   .log { height: 250px; }
 }
+/* ... (Keep all your existing CSS above this line) ... */
+
+/* --- Toast Notifications (Bottom Left) --- */
+.toast-container {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+  pointer-events: none; /* Let clicks pass through if needed */
+}
+
+.toast {
+  background: var(--green);
+  color: white;
+  padding: 14px 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(46, 107, 83, 0.3);
+  font-weight: 500;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  
+  /* Start hidden off-screen to the left */
+  opacity: 0;
+  transform: translateX(-150%);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
+}
+
+/* Triggered by JS */
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toast span {
+  font-size: 1.2rem;
+}
+
+/* Mobile responsiveness for toast */
+@media (max-width: 768px) {
+  .toast-container {
+    bottom: 20px;
+    left: 20px;
+    right: 20px; /* Full width on mobile */
+  }
+  .toast {
+    justify-content: center;
+  }
+}
