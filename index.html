@@ -17,18 +17,31 @@
       <span class="logo-text">ABDUL</span>
     </div>
     <div class="nav-links">
-      <a href="#">Recipes</a>
+      <a href="#" id="nav-recipes">Recipes</a>
       <a href="#">Saved</a>
       <a href="#">Meal plan</a>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <main class="hero">
-    <h1>Cook something good<br>tonight.</h1>
-    <p>Browse thousands of recipes, or just ask ABDUL what to make with what you have.</p>
-    <button class="cta-button">Browse recipes</button>
+  <!-- Home / Hero View -->
+  <main id="home-view">
+    <section class="hero">
+      <h1>Cook something good<br>tonight.</h1>
+      <p>Browse thousands of recipes, or just ask ABDUL what to make with what you have.</p>
+      <button id="browse-btn" class="cta-button">Browse recipes</button>
+    </section>
   </main>
+
+  <!-- Browse All Recipes View (Hidden by default) -->
+  <section id="browse-view" class="hidden">
+    <div class="browse-header">
+      <h2>All Recipes</h2>
+      <button id="back-btn" class="cta-button outline">Back to Home</button>
+    </div>
+    <div id="recipe-grid" class="recipe-grid">
+      <!-- Recipe cards will be injected here -->
+    </div>
+  </section>
 
   <!-- Floating Chat Widget -->
   <div class="chat-widget">
@@ -37,9 +50,7 @@
       <span class="chat-subtitle">Ask me for a recipe</span>
     </div>
     
-    <div id="log" class="log" aria-live="polite">
-      <!-- Messages will be injected here by JS -->
-    </div>
+    <div id="log" class="log" aria-live="polite"></div>
 
     <div class="chips" id="chips">
       <button>Under 15 min</button>
@@ -48,7 +59,6 @@
 
     <form id="form" class="composer">
       <input id="input" type="text" placeholder="Ask for a recipe..." autocomplete="off" maxlength="300" aria-label="Message">
-      <!-- Send button is hidden as per UI design, pressing Enter sends the message -->
       <button type="submit" style="display: none;">Send</button>
     </form>
   </div>
@@ -58,6 +68,7 @@
     const form = document.getElementById('form');
     const input = document.getElementById('input');
 
+    // --- Chat Logic ---
     function el(tag, cls, text) {
       const e = document.createElement(tag);
       if (cls) e.className = cls;
@@ -115,7 +126,7 @@
         const m = addMsg('bot', d.reply);
         (d.recipes || []).forEach(r => m.appendChild(card(r, d.full)));
       } catch (e) {
-        addMsg('bot', 'Sorry, I cannot reach the server right now (' + e.message + '). Please try again in a moment.');
+        addMsg('bot', 'Sorry, I cannot reach the server right now (' + e.message + ').');
       }
       scrollDown();
     }
@@ -131,13 +142,67 @@
     document.getElementById('chips').addEventListener('click', e => {
       if (e.target.tagName === 'BUTTON') {
         send(e.target.textContent);
-        // Optional: hide chips after clicking one
         document.getElementById('chips').style.display = 'none'; 
       }
     });
 
-    // Initial Greeting matching your screenshot
     addMsg('bot', 'Hi! What are you in the mood for tonight?');
+
+    // --- Browse Recipes Logic ---
+    const homeView = document.getElementById('home-view');
+    const browseView = document.getElementById('browse-view');
+    const recipeGrid = document.getElementById('recipe-grid');
+
+    async function loadAllRecipes() {
+      homeView.classList.add('hidden');
+      browseView.classList.remove('hidden');
+      recipeGrid.innerHTML = '<p>Loading recipes...</p>';
+
+      try {
+        const res = await fetch('/api/recipes');
+        if (!res.ok) throw new Error('Failed to fetch');
+        const recipes = await res.json();
+        
+        recipeGrid.innerHTML = ''; // Clear loading text
+
+        // Render each recipe in a grid card
+        recipes.forEach(r => {
+          const item = document.createElement('article');
+          item.className = 'grid-card';
+          
+          // Show first 4 ingredients in the preview
+          const previewIngredients = r.ingredients.slice(0, 4).map(i => `<li>${i.qty} ${i.name}</li>`).join('');
+          const moreText = r.ingredients.length > 4 ? `<li>...and more</li>` : '';
+
+          item.innerHTML = `
+            <h3>${r.name}</h3>
+            <p class="meta">${r.time} min</p>
+            <ul class="preview-list">${previewIngredients}${moreText}</ul>
+            <button class="link" onclick="askAbout('${r.name.replace(/'/g, "\\'")}')">See full recipe</button>
+          `;
+          recipeGrid.appendChild(item);
+        });
+      } catch (err) {
+        recipeGrid.innerHTML = '<p>Error loading recipes. Please try again later.</p>';
+      }
+    }
+
+    function goHome() {
+      browseView.classList.add('hidden');
+      homeView.classList.remove('hidden');
+    }
+
+    // Trigger recipe lookup in the chat widget
+    function askAbout(name) {
+      send('recipe for ' + name);
+      // Optional: scroll chat log into view if on mobile
+      document.querySelector('.chat-widget').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Event Listeners
+    document.getElementById('browse-btn').addEventListener('click', loadAllRecipes);
+    document.getElementById('nav-recipes').addEventListener('click', (e) => { e.preventDefault(); loadAllRecipes(); });
+    document.getElementById('back-btn').addEventListener('click', goHome);
   </script>
 </body>
 </html>
