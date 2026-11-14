@@ -19,9 +19,8 @@
       <div class="logo-circle">A</div>
       <span class="logo-text">ABDUL</span>
     </div>
-    <!-- Nav links removed -->
   </nav>
-
+  
   <!-- Home / Hero View -->
   <main id="home-view">
     <section class="hero">
@@ -94,10 +93,11 @@
       container.appendChild(toast);
       setTimeout(() => toast.classList.add('show'), 10);
 
+      // CHANGED: Timeout is now 10,000 milliseconds (10 seconds)
       const timer = setTimeout(() => {
         toast.classList.remove('show');
         setTimeout(() => toast.remove(), 300); 
-      }, 6000);
+      }, 10000);
       
       toast.addEventListener('click', () => clearTimeout(timer), { once: true });
     }

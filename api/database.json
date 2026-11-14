@@ -9963,5 +9963,127 @@
    "Cook until the noodles are soft.",
    "Top with a fried egg and serve with a side of broth."
   ]
+ },
+  {
+  "name": "Crispy Fried Chicken",
+  "time": 30,
+  "ingredients": [
+   {
+    "qty": "400 g",
+    "name": "chicken"
+   },
+   {
+    "qty": "1 cup",
+    "name": "flour"
+   },
+   {
+    "qty": "2",
+    "name": "egg"
+   },
+   {
+    "qty": "2 cups",
+    "name": "oil"
+   },
+   {
+    "qty": "to taste",
+    "name": "salt"
+   },
+   {
+    "qty": "to taste",
+    "name": "pepper"
+   }
+  ],
+  "steps": [
+   "Season the chicken with salt and pepper.",
+   "Dip the chicken in beaten egg, then coat generously with flour.",
+   "Heat oil in a deep pan and fry the chicken until golden brown and cooked through (about 10-15 minutes).",
+   "Drain on paper towels and serve."
+  ]
+ },
+ {
+  "name": "Sunny Side Up Egg",
+  "time": 5,
+  "ingredients": [
+   {
+    "qty": "2",
+    "name": "egg"
+   },
+   {
+    "qty": "2 tbsp",
+    "name": "oil"
+   },
+   {
+    "qty": "to taste",
+    "name": "salt"
+   },
+   {
+    "qty": "to taste",
+    "name": "pepper"
+   }
+  ],
+  "steps": [
+   "Heat oil in a non-stick pan over medium-low heat.",
+   "Crack the eggs gently into the pan.",
+   "Cover and cook until the whites are set but the yolk is still runny (about 3-4 minutes).",
+   "Season with salt and pepper and serve immediately."
+  ]
+ },
+ {
+  "name": "Scrambled Eggs",
+  "time": 10,
+  "ingredients": [
+   {
+    "qty": "3",
+    "name": "egg"
+   },
+   {
+    "qty": "2 tbsp",
+    "name": "butter"
+   },
+   {
+    "qty": "2 tbsp",
+    "name": "milk"
+   },
+   {
+    "qty": "to taste",
+    "name": "salt"
+   },
+   {
+    "qty": "to taste",
+    "name": "pepper"
+   }
+  ],
+  "steps": [
+   "Whisk the eggs, milk, salt, and pepper in a bowl.",
+   "Melt butter in a pan over medium heat.",
+   "Pour in the egg mixture and stir gently with a spatula until cooked to your liking. Serve hot."
+  ]
+ },
+ {
+  "name": "Garlic Fried Rice (Sinangag)",
+  "time": 10,
+  "ingredients": [
+   {
+    "qty": "3 cups cooked",
+    "name": "rice"
+   },
+   {
+    "qty": "6 cloves",
+    "name": "garlic"
+   },
+   {
+    "qty": "2 tbsp",
+    "name": "oil"
+   },
+   {
+    "qty": "to taste",
+    "name": "salt"
+   }
+  ],
+  "steps": [
+   "Heat oil in a wok and fry the minced garlic until golden brown and crispy.",
+   "Add the cold cooked rice and stir-fry for 3-5 minutes, breaking up any clumps.",
+   "Season with salt to taste and serve alongside your sunny side up eggs or fried chicken!"
+  ]
  }
 ]
