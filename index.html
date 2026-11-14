@@ -35,7 +35,7 @@
     </section>
   </main>
 
-  <!-- Browse All Recipes View (Hidden by default) -->
+  <!-- Browse All Recipes View -->
   <section id="browse-view" class="hidden">
     <div class="browse-header">
       <h2>All Recipes</h2>
@@ -77,17 +77,22 @@
       const toast = document.createElement('div');
       toast.className = 'toast';
       
+      // If it's a summary toast (no recipe name), don't show the "Click to see" text
+      const actionText = recipeName ? `<span class="toast-action">Click to see ingredients</span>` : '';
+      
       toast.innerHTML = `
         <div class="toast-icon">✅</div>
         <div class="toast-text">
           <strong>${message}</strong>
-          <span class="toast-action">Click to see ingredients</span>
+          ${actionText}
         </div>
       `;
       
       // Click event for the toast
       toast.onclick = () => {
-        send('recipe for ' + recipeName);
+        if (recipeName) {
+          send('recipe for ' + recipeName);
+        }
         document.querySelector('.chat-widget').scrollIntoView({ behavior: 'smooth' });
         toast.remove(); 
       };
@@ -97,11 +102,11 @@
       // Animate in
       setTimeout(() => toast.classList.add('show'), 10);
 
-      // Auto-remove after 5 seconds
+      // Auto-remove after 6 seconds
       const timer = setTimeout(() => {
         toast.classList.remove('show');
         setTimeout(() => toast.remove(), 300); 
-      }, 5000);
+      }, 6000);
       
       toast.addEventListener('click', () => clearTimeout(timer), { once: true });
     }
@@ -163,16 +168,33 @@
         const d = await res.json();
         const m = addMsg('bot', d.reply);
         
-        let foundCompleteRecipe = false;
+        // Clear previous toasts so they don't pile up from older searches
+        document.getElementById('toast-container').innerHTML = '';
+
+        const completeRecipes = [];
 
         (d.recipes || []).forEach(r => {
           m.appendChild(card(r, d.full));
           
-          if (r.missing && r.missing.length === 0 && !foundCompleteRecipe) {
-            foundCompleteRecipe = true;
-            showToast(`You have all ingredients for ${r.name}!`, r.name);
+          // If the recipe has 0 missing ingredients, add it to the complete list
+          if (r.missing && r.missing.length === 0) {
+            completeRecipes.push(r.name);
           }
         });
+
+        // Show notifications for all complete recipes
+        if (completeRecipes.length > 0) {
+          // Show up to 3 individual toasts so the screen isn't flooded
+          const toShow = completeRecipes.slice(0, 3);
+          toShow.forEach(name => {
+            showToast(`You have all ingredients for ${name}!`, name);
+          });
+
+          // If there are more than 3, show a summary toast for the rest
+          if (completeRecipes.length > 3) {
+            showToast(`And ${completeRecipes.length - 3} more recipes you can cook!`, null);
+          }
+        }
 
       } catch (e) {
         addMsg('bot', 'Sorry, I cannot reach the server right now (' + e.message + ').');
