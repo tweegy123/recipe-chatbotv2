@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Notification Container (Bottom Left) -->
+  <!-- Toast Notification Container -->
   <div id="toast-container" class="toast-container"></div>
 
   <!-- Navigation Bar -->
@@ -35,13 +35,15 @@
     </section>
   </main>
 
-  <!-- Browse All Recipes View -->
+  <!-- Browse All Recipes View (Hidden by default) -->
   <section id="browse-view" class="hidden">
     <div class="browse-header">
       <h2>All Recipes</h2>
       <button id="back-btn" class="cta-button outline">Back to Home</button>
     </div>
-    <div id="recipe-grid" class="recipe-grid"></div>
+    <div id="recipe-grid" class="recipe-grid">
+      <!-- Recipe cards will load here -->
+    </div>
   </section>
 
   <!-- Floating Chat Widget -->
@@ -70,22 +72,38 @@
     const input = document.getElementById('input');
 
     // --- Toast Notification Logic ---
-    function showToast(message) {
+    function showToast(message, recipeName) {
       const container = document.getElementById('toast-container');
       const toast = document.createElement('div');
       toast.className = 'toast';
-      // Checkmark emoji for success
-      toast.innerHTML = `<span>✅</span> ${message}`;
+      
+      toast.innerHTML = `
+        <div class="toast-icon">✅</div>
+        <div class="toast-text">
+          <strong>${message}</strong>
+          <span class="toast-action">Click to see ingredients</span>
+        </div>
+      `;
+      
+      // Click event for the toast
+      toast.onclick = () => {
+        send('recipe for ' + recipeName);
+        document.querySelector('.chat-widget').scrollIntoView({ behavior: 'smooth' });
+        toast.remove(); 
+      };
+
       container.appendChild(toast);
 
-      // Trigger animation
+      // Animate in
       setTimeout(() => toast.classList.add('show'), 10);
 
-      // Remove after 4 seconds
-      setTimeout(() => {
+      // Auto-remove after 5 seconds
+      const timer = setTimeout(() => {
         toast.classList.remove('show');
-        setTimeout(() => toast.remove(), 300); // Wait for slide out animation
-      }, 4000);
+        setTimeout(() => toast.remove(), 300); 
+      }, 5000);
+      
+      toast.addEventListener('click', () => clearTimeout(timer), { once: true });
     }
 
     // --- Chat Logic ---
@@ -118,7 +136,6 @@
       c.appendChild(el('p', 'meta', `${r.time} min`));
       if (r.have) {
         if (r.have.length) c.appendChild(el('p', 'have', 'You have: ' + r.have.join(', ')));
-        // Updated missing text for clarity
         c.appendChild(el('p', 'miss', r.missing.length ? 'Still need: ' + r.missing.join(', ') : 'You have everything!'));
       }
       if (full) {
@@ -151,10 +168,9 @@
         (d.recipes || []).forEach(r => {
           m.appendChild(card(r, d.full));
           
-          // Check if this recipe has NO missing ingredients
           if (r.missing && r.missing.length === 0 && !foundCompleteRecipe) {
             foundCompleteRecipe = true;
-            showToast(`You have all ingredients for ${r.name}!`);
+            showToast(`You have all ingredients for ${r.name}!`, r.name);
           }
         });
 
