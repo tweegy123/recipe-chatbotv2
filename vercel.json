@@ -2,12 +2,12 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/app.py",
+      "src": "api/index.py",
       "use": "@vercel/python",
       "config": { "includeFiles": ["api/database.json", "api/chat.py", "index.html", "style.css"] }
     }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api/app.py" }
+    { "source": "/(.*)", "destination": "/api/index.py" }
   ]
 }
