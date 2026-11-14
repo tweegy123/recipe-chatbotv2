@@ -4,6 +4,7 @@ import os
 import sys
 import random
 import re
+import difflib  # <-- Added for typo correction
 from pathlib import Path
 
 BASE = Path(os.path.abspath(__file__)).parent
@@ -17,7 +18,7 @@ HELP = ('Hi! Tell me what is in your kitchen, like "I have chicken, garlic and r
         'I assume you always have salt, pepper, oil, water and sugar.')
 
 
-def norm(word): #grammar ies, oes, s. para ma read yong code
+def norm(word):
     """Crude singularizer so 'eggs' matches 'egg' and 'tomatoes' matches 'tomato'."""
     if word.endswith("ies"):
         return word[:-3] + "y"
@@ -74,7 +75,20 @@ def find_by_ingredients(have, pool):
 def reply_to(message):
     toks = tokens(message)
     words = set(toks)
-    have = words & VOCAB
+    
+    # --- TYPO CORRECTION LOGIC ---
+    have = set()
+    for w in words:
+        if w in VOCAB:
+            have.add(w)
+        else:
+            # If the word isn't exact, check if it's a typo for a known ingredient
+            # cutoff=0.75 means it must be at least 75% similar (e.g., 'eggflant' -> 'eggplant')
+            matches = difflib.get_close_matches(w, VOCAB, n=1, cutoff=0.75)
+            if matches:
+                have.add(matches[0])
+    # -----------------------------
+
     cue = bool(words & {"recipe", "make", "cook", "how", "show"})
 
     if not toks or (words & {"hi", "hello", "hey", "help"} and not have):
