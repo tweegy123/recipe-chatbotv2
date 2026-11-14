@@ -8,6 +8,6 @@
     }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/api/app" }
+    { "source": "/(.*)", "destination": "/api/app.py" }
   ]
 }
