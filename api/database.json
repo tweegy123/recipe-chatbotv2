@@ -10206,5 +10206,326 @@
    "Add the cold cooked rice and stir-fry for 3-5 minutes, breaking up any clumps.",
    "Season with salt to taste and serve alongside your sunny side up eggs or fried chicken!"
   ]
+ },
+  {
+  "name": "Classic Pork Sisig",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "calamansi"},
+   {"qty": "1", "name": "chili"},
+   {"qty": "1", "name": "egg"}
+  ],
+  "steps": [
+   "Boil the pork until tender, then grill or broil until crispy.",
+   "Chop the pork into small pieces and mix with chopped onion, soy sauce, calamansi, and chili.",
+   "Serve on a sizzling plate and top with an egg."
+  ]
+ },
+ {
+  "name": "Beef Kare-Kare",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "peanut butter"},
+   {"qty": "1", "name": "eggplant"},
+   {"qty": "1 bunch", "name": "kangkong"},
+   {"qty": "2 tbsp", "name": "shrimp paste"}
+  ],
+  "steps": [
+   "Boil the beef until very tender, saving the broth.",
+   "Sauté onion and garlic, add the beef broth and peanut butter, and simmer until thick.",
+   "Add the beef and blanched vegetables. Serve with a side of shrimp paste (bagoong)."
+  ]
+ },
+ {
+  "name": "Lechon Kawali",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "2 tbsp", "name": "salt"},
+   {"qty": "1 tbsp", "name": "pepper"},
+   {"qty": "4 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Boil the pork belly with salt and pepper until tender.",
+   "Let it dry completely, then deep fry until the skin is crispy and golden.",
+   "Chop into pieces and serve with lechon sauce."
+  ]
+ },
+ {
+  "name": "Pancit Palabok",
+  "time": 40,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "100 g", "name": "shrimp"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Boil the noodles until soft and place on a plate.",
+   "Cook a thick sauce using shrimp paste, garlic, and water.",
+   "Pour the sauce over the noodles and top with boiled eggs and shrimp."
+  ]
+ },
+ {
+  "name": "Lumpiang Shanghai",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "20 pieces", "name": "lumpia wrapper"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Mix ground pork with minced carrot and onion.",
+   "Wrap the mixture in lumpia wrappers.",
+   "Deep fry until golden brown and crispy. Serve with sweet chili sauce."
+  ]
+ },
+ {
+  "name": "Bicol Express",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "3", "name": "chili"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and pork until browned.",
+   "Add the shrimp paste, chili, and coconut milk.",
+   "Simmer until the pork is tender and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Laing",
+  "time": 40,
+  "ingredients": [
+   {"qty": "2 cups", "name": "taro leaves"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and shrimp paste.",
+   "Add the coconut milk and bring to a boil.",
+   "Add the taro leaves and simmer until tender and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Pinakbet",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1", "name": "eggplant"},
+   {"qty": "1", "name": "squash"},
+   {"qty": "1 cup", "name": "green beans"},
+   {"qty": "5 pieces", "name": "okra"},
+   {"qty": "2", "name": "tomato"},
+   {"qty": "2 tbsp", "name": "shrimp paste"}
+  ],
+  "steps": [
+   "Sauté tomato and shrimp paste.",
+   "Add the squash and a little water, and simmer until half-cooked.",
+   "Add the eggplant, green beans, and okra. Cook until tender."
+  ]
+ },
+ {
+  "name": "Beef Caldereta",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Sauté garlic and onion, then add the beef and cook until browned.",
+   "Add the tomato sauce and water, and simmer until the beef is tender.",
+   "Add the potatoes, carrots, bell pepper, and cheese. Cook until vegetables are soft."
+  ]
+ },
+ {
+  "name": "Pork Menudo",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Sauté onion and garlic, then add the pork and cook until browned.",
+   "Add the tomato sauce, water, and diced potatoes and carrots.",
+   "Simmer until the pork and vegetables are tender."
+  ]
+ },
+ {
+  "name": "Chicken Afritada",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "tomato sauce"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and chicken.",
+   "Add the tomato sauce and water, and simmer until the chicken is cooked.",
+   "Add the potatoes, carrots, and bell pepper, and simmer until tender."
+  ]
+ },
+ {
+  "name": "Tinolang Manok",
+  "time": 35,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "papaya"},
+   {"qty": "1 bunch", "name": "spinach"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sauté ginger, onion, and chicken in a pot.",
+   "Add water and bring to a boil, then add the papaya.",
+   "Once the papaya is tender, add the spinach and season with salt."
+  ]
+ },
+ {
+  "name": "Bulalo",
+  "time": 120,
+  "ingredients": [
+   {"qty": "500 g", "name": "beef"},
+   {"qty": "2", "name": "corn"},
+   {"qty": "1", "name": "cabbage"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil the beef bones in water, skimming the scum.",
+   "Add the onion and corn, and simmer for 1-2 hours until the beef is tender.",
+   "Add the cabbage at the end and season with salt and pepper."
+  ]
+ },
+ {
+  "name": "Arroz Caldo",
+  "time": 35,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup uncooked", "name": "rice"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sauté ginger, garlic, and chicken in a pot.",
+   "Add the rice and water, and simmer until the rice breaks down into a porridge.",
+   "Season with salt and top with fried garlic and a boiled egg."
+  ]
+ },
+ {
+  "name": "Tapsilog",
+  "time": 20,
+  "ingredients": [
+   {"qty": "200 g", "name": "beef"},
+   {"qty": "1 cup cooked", "name": "rice"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "calamansi"}
+  ],
+  "steps": [
+   "Marinate the beef in soy sauce and calamansi, then fry until cooked.",
+   "Fry the eggs sunny side up.",
+   "Serve the beef and egg over garlic fried rice."
+  ]
+ },
+ {
+  "name": "Longsilog",
+  "time": 15,
+  "ingredients": [
+   {"qty": "3", "name": "sausage"},
+   {"qty": "1 cup cooked", "name": "rice"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Fry the sausages until cooked and slightly charred.",
+   "Fry the eggs.",
+   "Serve with garlic fried rice."
+  ]
+ },
+ {
+  "name": "Lumpiang Sariwa",
+  "time": 30,
+  "ingredients": [
+   {"qty": "1 cup shredded", "name": "cabbage"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic, cabbage, and carrots.",
+   "Make a thin crepe using flour and egg.",
+   "Wrap the vegetables in the crepe and pour a sweet peanut sauce over it."
+  ]
+ },
+ {
+  "name": "Turon",
+  "time": 20,
+  "ingredients": [
+   {"qty": "2", "name": "banana"},
+   {"qty": "10 pieces", "name": "lumpia wrapper"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Slice the bananas and roll them in sugar.",
+   "Wrap them in lumpia wrappers.",
+   "Deep fry until golden and caramelized."
+  ]
+ },
+ {
+  "name": "Halo-Halo",
+  "time": 15,
+  "ingredients": [
+   {"qty": "1 cup", "name": "shaved ice"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1", "name": "banana"},
+   {"qty": "1 cup", "name": "sweet beans"},
+   {"qty": "1 scoop", "name": "ice cream"}
+  ],
+  "steps": [
+   "Layer the sweet beans and sliced banana in a tall glass.",
+   "Top with shaved ice and pour milk over it.",
+   "Add a scoop of ice cream on top and mix everything before eating."
+  ]
+ },
+ {
+  "name": "Leche Flan",
+  "time": 45,
+  "ingredients": [
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "5", "name": "egg"},
+   {"qty": "1/2 cup", "name": "sugar"},
+   {"qty": "1 tsp", "name": "vanilla"}
+  ],
+  "steps": [
+   "Melt sugar in a pan until golden to make caramel, and pour into a mold.",
+   "Mix egg yolks, milk, and vanilla, and pour over the caramel.",
+   "Steam for 30 minutes. Let it cool before flipping."
+  ]
  }
 ]
