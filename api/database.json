@@ -10527,5 +10527,3953 @@
    "Mix egg yolks, milk, and vanilla, and pour over the caramel.",
    "Steam for 30 minutes. Let it cool before flipping."
   ]
+ },
+  {
+  "name": "Pork Sisig",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "calamansi"},
+   {"qty": "1", "name": "chili"},
+   {"qty": "1", "name": "egg"}
+  ],
+  "steps": [
+   "Boil the pork until tender, then grill or broil until crispy.",
+   "Chop the pork into small pieces and mix with chopped onion, soy sauce, calamansi, and chili.",
+   "Serve on a sizzling plate and top with an egg."
+  ]
+ },
+ {
+  "name": "Beef Kare-Kare",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "peanut butter"},
+   {"qty": "1", "name": "eggplant"},
+   {"qty": "1 bunch", "name": "kangkong"},
+   {"qty": "2 tbsp", "name": "shrimp paste"}
+  ],
+  "steps": [
+   "Boil the beef until very tender, saving the broth.",
+   "Sauté onion and garlic, add the beef broth and peanut butter, and simmer until thick.",
+   "Add the beef and blanched vegetables. Serve with a side of shrimp paste."
+  ]
+ },
+ {
+  "name": "Lechon Kawali",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "2 tbsp", "name": "salt"},
+   {"qty": "1 tbsp", "name": "pepper"},
+   {"qty": "4 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Boil the pork belly with salt and pepper until tender.",
+   "Let it dry completely, then deep fry until the skin is crispy and golden.",
+   "Chop into pieces and serve with lechon sauce."
+  ]
+ },
+ {
+  "name": "Bicol Express",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "3", "name": "chili"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and pork until browned.",
+   "Add the shrimp paste, chili, and coconut milk.",
+   "Simmer until the pork is tender and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Laing",
+  "time": 40,
+  "ingredients": [
+   {"qty": "2 cups", "name": "taro leaves"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and shrimp paste.",
+   "Add the coconut milk and bring to a boil.",
+   "Add the taro leaves and simmer until tender and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Pinakbet",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1", "name": "eggplant"},
+   {"qty": "1", "name": "squash"},
+   {"qty": "1 cup", "name": "green beans"},
+   {"qty": "5 pieces", "name": "okra"},
+   {"qty": "2", "name": "tomato"},
+   {"qty": "2 tbsp", "name": "shrimp paste"}
+  ],
+  "steps": [
+   "Sauté tomato and shrimp paste.",
+   "Add the squash and a little water, and simmer until half-cooked.",
+   "Add the eggplant, green beans, and okra. Cook until tender."
+  ]
+ },
+ {
+  "name": "Bulalo",
+  "time": 120,
+  "ingredients": [
+   {"qty": "500 g", "name": "beef"},
+   {"qty": "2", "name": "corn"},
+   {"qty": "1", "name": "cabbage"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil the beef bones in water, skimming the scum.",
+   "Add the onion and corn, and simmer for 1-2 hours until the beef is tender.",
+   "Add the cabbage at the end and season with salt and pepper."
+  ]
+ },
+ {
+  "name": "Arroz Caldo",
+  "time": 35,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup uncooked", "name": "rice"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sauté ginger, garlic, and chicken in a pot.",
+   "Add the rice and water, and simmer until the rice breaks down into a porridge.",
+   "Season with salt and top with fried garlic and a boiled egg."
+  ]
+ },
+ {
+  "name": "Lumpiang Shanghai",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "20 pieces", "name": "lumpia wrapper"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Mix ground pork with minced carrot and onion.",
+   "Wrap the mixture in lumpia wrappers.",
+   "Deep fry until golden brown and crispy. Serve with sweet chili sauce."
+  ]
+ },
+ {
+  "name": "Pancit Palabok",
+  "time": 40,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "100 g", "name": "shrimp"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Boil the noodles until soft and place on a plate.",
+   "Cook a thick sauce using shrimp paste, garlic, and water.",
+   "Pour the sauce over the noodles and top with boiled eggs and shrimp."
+  ]
+ },
+ {
+  "name": "Chicken Inasal",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "calamansi"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Marinate the chicken in soy sauce, calamansi, and crushed garlic.",
+   "Grill over hot coals or pan-fry in oil until cooked through.",
+   "Serve with rice and a side of soy sauce and calamansi dip."
+  ]
+ },
+ {
+  "name": "Beef Mechado",
+  "time": 70,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Marinate the beef in soy sauce and lemon juice.",
+   "Sauté garlic and onion, add the beef, and brown it.",
+   "Add the tomato sauce and water, and simmer until the beef is tender. Add potatoes and cook until soft."
+  ]
+ },
+ {
+  "name": "Pork Menudo",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Sauté onion and garlic, then add the pork and cook until browned.",
+   "Add the tomato sauce, water, and diced potatoes and carrots.",
+   "Simmer until the pork and vegetables are tender."
+  ]
+ },
+ {
+  "name": "Chicken Afritada",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "tomato sauce"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and chicken.",
+   "Add the tomato sauce and water, and simmer until the chicken is cooked.",
+   "Add the potatoes, carrots, and bell pepper, and simmer until tender."
+  ]
+ },
+ {
+  "name": "Beef Caldereta",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Sauté garlic and onion, then add the beef and cook until browned.",
+   "Add the tomato sauce and water, and simmer until the beef is tender.",
+   "Add the potatoes, carrots, bell pepper, and cheese. Cook until vegetables are soft."
+  ]
+ },
+ {
+  "name": "Spaghetti Bolognese",
+  "time": 45,
+  "ingredients": [
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "300 g", "name": "beef"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1 cup", "name": "tomato sauce"}
+  ],
+  "steps": [
+   "Boil the pasta in salted water until al dente.",
+   "Sauté onion and garlic, then add the ground beef until browned.",
+   "Add the tomato sauce and simmer for 15 minutes. Toss with pasta."
+  ]
+ },
+ {
+  "name": "Beef Lasagna",
+  "time": 60,
+  "ingredients": [
+   {"qty": "12 pieces", "name": "lasagna noodles"},
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Boil lasagna noodles until soft.",
+   "Cook beef with onion and tomato sauce.",
+   "Layer noodles, meat sauce, and cheese in a dish. Bake at 180°C for 25 minutes."
+  ]
+ },
+ {
+  "name": "Chicken Alfredo",
+  "time": 30,
+  "ingredients": [
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "cream"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Boil pasta until al dente.",
+   "Cook sliced chicken and garlic in a pan.",
+   "Add cream and cheese, simmer until thick, and toss with pasta."
+  ]
+ },
+ {
+  "name": "Pad Thai",
+  "time": 25,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1/2 cup", "name": "peanuts"}
+  ],
+  "steps": [
+   "Soak noodles in warm water until soft.",
+   "Stir-fry shrimp and eggs in a wok.",
+   "Add noodles, soy sauce, and peanuts. Toss until heated through."
+  ]
+ },
+ {
+  "name": "Beef Stroganoff",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "mushroom"},
+   {"qty": "1/2 cup", "name": "cream"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "200 g", "name": "pasta"}
+  ],
+  "steps": [
+   "Cook beef strips and onion in a pan until browned.",
+   "Add mushrooms and cream, and simmer.",
+   "Serve over cooked pasta."
+  ]
+ },
+ {
+  "name": "Chili con Carne",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 can", "name": "tomato"},
+   {"qty": "1 can", "name": "beans"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "chili powder"}
+  ],
+  "steps": [
+   "Sauté onion and beef until browned.",
+   "Add tomatoes, beans, and chili powder.",
+   "Simmer for 20 minutes until thick. Serve with rice or bread."
+  ]
+ },
+ {
+  "name": "French Toast",
+  "time": 15,
+  "ingredients": [
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1/2 cup", "name": "milk"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Whisk eggs and milk in a bowl.",
+   "Dip bread slices into the mixture.",
+   "Fry in butter until golden brown on both sides. Serve with syrup."
+  ]
+ },
+ {
+  "name": "Buttermilk Waffles",
+  "time": 20,
+  "ingredients": [
+   {"qty": "2 cups", "name": "flour"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1 1/2 cups", "name": "milk"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Mix dry ingredients, then whisk in eggs, milk, and melted butter.",
+   "Pour batter into a hot waffle iron.",
+   "Cook until golden and crisp. Serve with butter and syrup."
+  ]
+ },
+ {
+  "name": "Shepherds Pie",
+  "time": 50,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "3", "name": "potato"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1/2 cup", "name": "milk"}
+  ],
+  "steps": [
+   "Cook beef, onion, and carrot in a pan.",
+   "Boil and mash potatoes with milk.",
+   "Layer beef mixture in a dish, top with mashed potatoes, and bake until golden."
+  ]
+ },
+ {
+  "name": "Meatloaf",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "beef"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "1 cup", "name": "bread crumbs"},
+   {"qty": "1/2 cup", "name": "tomato sauce"}
+  ],
+  "steps": [
+   "Mix beef, onion, egg, and bread crumbs.",
+   "Shape into a loaf and place in a baking pan.",
+   "Top with tomato sauce and bake at 180°C for 45 minutes."
+  ]
+ },
+ {
+  "name": "Fish and Chips",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "fish"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "2 cups", "name": "oil"},
+   {"qty": "1/2 cup", "name": "milk"}
+  ],
+  "steps": [
+   "Cut potatoes into fries and deep fry until golden.",
+   "Dip the fish in a batter made of flour and milk.",
+   "Deep fry the fish until crispy. Serve with the fries."
+  ]
+ },
+ {
+  "name": "Tonkotsu Ramen",
+  "time": 60,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "2 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Boil pork in water for 45 minutes to make a rich broth. Season with soy sauce.",
+   "Cook noodles in a separate pot.",
+   "Serve noodles in the broth, topped with sliced pork and a soft-boiled egg."
+  ]
+ },
+ {
+  "name": "Chicken Katsu",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "bread crumbs"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Coat chicken in flour, then egg, then bread crumbs.",
+   "Deep fry until golden brown and cooked through.",
+   "Slice and serve with rice and katsu sauce."
+  ]
+ },
+ {
+  "name": "Bibimbap",
+  "time": 30,
+  "ingredients": [
+   {"qty": "3 cups cooked", "name": "rice"},
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1 cup", "name": "spinach"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Stir-fry beef, carrot, and spinach separately.",
+   "Place hot rice in a bowl and arrange the toppings on top.",
+   "Top with a fried egg and serve with soy sauce."
+  ]
+ },
+ {
+  "name": "Kimchi Fried Rice",
+  "time": 15,
+  "ingredients": [
+   {"qty": "3 cups cooked", "name": "rice"},
+   {"qty": "1 cup", "name": "kimchi"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Stir-fry chopped kimchi in oil for 2 minutes.",
+   "Add rice and soy sauce, and stir-fry for 4 minutes.",
+   "Top with a fried egg."
+  ]
+ },
+ {
+  "name": "Beef Pho",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Simmer beef, ginger, and onion in water for 1 hour to make broth.",
+   "Cook noodles and place in a bowl.",
+   "Top with thinly sliced raw beef and pour the hot broth over it."
+  ]
+ },
+ {
+  "name": "Vegetable Spring Rolls",
+  "time": 30,
+  "ingredients": [
+   {"qty": "1 cup shredded", "name": "cabbage"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "20 pieces", "name": "spring roll wrapper"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Mix shredded cabbage and carrots.",
+   "Wrap the vegetables in spring roll wrappers.",
+   "Deep fry until golden and crispy."
+  ]
+ },
+ {
+  "name": "Shrimp Tempura",
+  "time": 20,
+  "ingredients": [
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Mix flour and egg with cold water to make a batter.",
+   "Dip shrimp in batter and deep fry until crispy and golden.",
+   "Serve with a dipping sauce."
+  ]
+ },
+ {
+  "name": "Miso Soup",
+  "time": 15,
+  "ingredients": [
+   {"qty": "2 tbsp", "name": "miso paste"},
+   {"qty": "1 block", "name": "tofu"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Bring water to a simmer and add chopped onion.",
+   "Add cubed tofu.",
+   "Turn off heat, dissolve miso paste into the soup, and serve."
+  ]
+ },
+ {
+  "name": "Classic Cheeseburger",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2 pieces", "name": "bread"},
+   {"qty": "2 slices", "name": "cheese"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "tomato"}
+  ],
+  "steps": [
+   "Form beef into patties and grill or pan-fry until cooked.",
+   "Toast the buns.",
+   "Assemble with cheese, onion, and tomato."
+  ]
+ },
+ {
+  "name": "Club Sandwich",
+  "time": 15,
+  "ingredients": [
+   {"qty": "6 slices", "name": "bread"},
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "4 strips", "name": "bacon"},
+   {"qty": "1", "name": "tomato"},
+   {"qty": "1 head", "name": "lettuce"}
+  ],
+  "steps": [
+   "Toast the bread.",
+   "Cook chicken and bacon.",
+   "Layer bread, chicken, bacon, lettuce, and tomato, then top with another slice of bread."
+  ]
+ },
+ {
+  "name": "BLT Sandwich",
+  "time": 10,
+  "ingredients": [
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "4 strips", "name": "bacon"},
+   {"qty": "1 head", "name": "lettuce"},
+   {"qty": "1", "name": "tomato"}
+  ],
+  "steps": [
+   "Cook the bacon until crispy.",
+   "Toast the bread.",
+   "Layer bacon, lettuce, and tomato between the bread slices."
+  ]
+ },
+ {
+  "name": "Tuna Melt",
+  "time": 15,
+  "ingredients": [
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "1 can", "name": "tuna"},
+   {"qty": "1/2 cup", "name": "cheese"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Mix tuna with mayonnaise (if available) or butter.",
+   "Place tuna and cheese between two slices of bread.",
+   "Grill in a pan until the bread is golden and cheese is melted."
+  ]
+ },
+ {
+  "name": "BBQ Pork Ribs",
+  "time": 90,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "2 tbsp", "name": "vinegar"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Boil the pork ribs until tender.",
+   "Mix tomato sauce, sugar, vinegar, and garlic to make a BBQ sauce.",
+   "Grill the ribs while brushing with the sauce until sticky and charred."
+  ]
+ },
+ {
+  "name": "Pulled Pork Sandwich",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "2 pieces", "name": "bread"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Slow cook the pork with onion and water until it falls apart.",
+   "Shred the pork and mix with tomato sauce.",
+   "Serve the pulled pork inside the buns."
+  ]
+ },
+ {
+  "name": "Macaroni and Cheese",
+  "time": 25,
+  "ingredients": [
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "2 tbsp", "name": "flour"}
+  ],
+  "steps": [
+   "Boil the macaroni until tender.",
+   "Melt butter, whisk in flour, then add milk and cheese to make a sauce.",
+   "Mix the cooked macaroni with the cheese sauce and serve hot."
+  ]
+ },
+ {
+  "name": "Chicken Caesar Salad",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 head", "name": "lettuce"},
+   {"qty": "1/2 cup", "name": "cheese"},
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Cook the chicken and slice it.",
+   "Toast the bread and cut into croutons.",
+   "Toss the lettuce, chicken, croutons, and cheese with a creamy dressing."
+  ]
+ },
+ {
+  "name": "Beef Tacos",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "4", "name": "tortilla"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "tomato"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Cook the beef with chopped onion until browned.",
+   "Warm the tortillas.",
+   "Fill with beef, chopped tomato, and cheese."
+  ]
+ },
+ {
+  "name": "Beef Quesadilla",
+  "time": 15,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "4", "name": "tortilla"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Cook the beef with onion until browned.",
+   "Place beef and cheese on half a tortilla and fold.",
+   "Toast in a pan until crispy and cheese is melted."
+  ]
+ },
+ {
+  "name": "Sweet and Sour Pork",
+  "time": 35,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "pineapple"},
+   {"qty": "1/2 cup", "name": "vinegar"},
+   {"qty": "2 tbsp", "name": "sugar"}
+  ],
+  "steps": [
+   "Fry the pork until golden brown.",
+   "Sauté bell pepper and pineapple.",
+   "Add vinegar and sugar, then toss the pork in the sauce until coated."
+  ]
+ },
+ {
+  "name": "Shrimp Scampi",
+  "time": 20,
+  "ingredients": [
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Boil pasta until al dente.",
+   "Melt butter and sauté garlic and shrimp.",
+   "Toss with pasta, lemon juice, and serve."
+  ]
+ },
+ {
+  "name": "Mushroom Risotto",
+  "time": 35,
+  "ingredients": [
+   {"qty": "1 cup uncooked", "name": "rice"},
+   {"qty": "1 cup sliced", "name": "mushroom"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Sauté onion and mushroom in a pot.",
+   "Add rice and gradually add water, stirring until absorbed.",
+   "Stir in cheese and serve creamy."
+  ]
+ },
+ {
+  "name": "Chicken Pot Pie",
+  "time": 50,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "potato"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1 cup", "name": "flour"}
+  ],
+  "steps": [
+   "Cook chicken and vegetables in a pan.",
+   "Make a creamy sauce with milk and flour.",
+   "Pour into a dish, top with a dough crust, and bake until golden."
+  ]
+ },
+ {
+  "name": "Beef Bulgogi",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Marinate sliced beef in soy sauce, sugar, and garlic.",
+   "Stir-fry the beef and onion in a hot pan until cooked.",
+   "Serve with rice."
+  ]
+ },
+ {
+  "name": "Egg Drop Soup",
+  "time": 15,
+  "ingredients": [
+   {"qty": "2", "name": "egg"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Bring water and chopped onion to a boil.",
+   "Stir in soy sauce.",
+   "Slowly pour in beaten eggs while stirring to create ribbons."
+  ]
+ },
+  {
+  "name": "Pork Sisig",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "calamansi"},
+   {"qty": "1", "name": "chili"},
+   {"qty": "1", "name": "egg"}
+  ],
+  "steps": [
+   "Boil the pork until tender, then grill or broil until crispy.",
+   "Chop the pork into small pieces and mix with chopped onion, soy sauce, calamansi, and chili.",
+   "Serve on a sizzling plate and top with an egg."
+  ]
+ },
+ {
+  "name": "Beef Kare-Kare",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "peanut butter"},
+   {"qty": "1", "name": "eggplant"},
+   {"qty": "1 bunch", "name": "kangkong"},
+   {"qty": "2 tbsp", "name": "shrimp paste"}
+  ],
+  "steps": [
+   "Boil the beef until very tender, saving the broth.",
+   "Sauté onion and garlic, add the beef broth and peanut butter, and simmer until thick.",
+   "Add the beef and blanched vegetables. Serve with a side of shrimp paste."
+  ]
+ },
+ {
+  "name": "Lechon Kawali",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "2 tbsp", "name": "salt"},
+   {"qty": "1 tbsp", "name": "pepper"},
+   {"qty": "4 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Boil the pork belly with salt and pepper until tender.",
+   "Let it dry completely, then deep fry until the skin is crispy and golden.",
+   "Chop into pieces and serve with lechon sauce."
+  ]
+ },
+ {
+  "name": "Bicol Express",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "3", "name": "chili"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and pork until browned.",
+   "Add the shrimp paste, chili, and coconut milk.",
+   "Simmer until the pork is tender and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Laing",
+  "time": 40,
+  "ingredients": [
+   {"qty": "2 cups", "name": "taro leaves"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and shrimp paste.",
+   "Add the coconut milk and bring to a boil.",
+   "Add the taro leaves and simmer until tender and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Pinakbet",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1", "name": "eggplant"},
+   {"qty": "1", "name": "squash"},
+   {"qty": "1 cup", "name": "green beans"},
+   {"qty": "5 pieces", "name": "okra"},
+   {"qty": "2", "name": "tomato"},
+   {"qty": "2 tbsp", "name": "shrimp paste"}
+  ],
+  "steps": [
+   "Sauté tomato and shrimp paste.",
+   "Add the squash and a little water, and simmer until half-cooked.",
+   "Add the eggplant, green beans, and okra. Cook until tender."
+  ]
+ },
+ {
+  "name": "Bulalo",
+  "time": 120,
+  "ingredients": [
+   {"qty": "500 g", "name": "beef"},
+   {"qty": "2", "name": "corn"},
+   {"qty": "1", "name": "cabbage"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil the beef bones in water, skimming the scum.",
+   "Add the onion and corn, and simmer for 1-2 hours until the beef is tender.",
+   "Add the cabbage at the end and season with salt and pepper."
+  ]
+ },
+ {
+  "name": "Arroz Caldo",
+  "time": 35,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup uncooked", "name": "rice"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sauté ginger, garlic, and chicken in a pot.",
+   "Add the rice and water, and simmer until the rice breaks down into a porridge.",
+   "Season with salt and top with fried garlic and a boiled egg."
+  ]
+ },
+ {
+  "name": "Lumpiang Shanghai",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "20 pieces", "name": "lumpia wrapper"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Mix ground pork with minced carrot and onion.",
+   "Wrap the mixture in lumpia wrappers.",
+   "Deep fry until golden brown and crispy. Serve with sweet chili sauce."
+  ]
+ },
+ {
+  "name": "Pancit Palabok",
+  "time": 40,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "100 g", "name": "shrimp"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Boil the noodles until soft and place on a plate.",
+   "Cook a thick sauce using shrimp paste, garlic, and water.",
+   "Pour the sauce over the noodles and top with boiled eggs and shrimp."
+  ]
+ },
+ {
+  "name": "Chicken Inasal",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "calamansi"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Marinate the chicken in soy sauce, calamansi, and crushed garlic.",
+   "Grill over hot coals or pan-fry in oil until cooked through.",
+   "Serve with rice and a side of soy sauce and calamansi dip."
+  ]
+ },
+ {
+  "name": "Beef Mechado",
+  "time": 70,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Marinate the beef in soy sauce and lemon juice.",
+   "Sauté garlic and onion, add the beef, and brown it.",
+   "Add the tomato sauce and water, and simmer until the beef is tender. Add potatoes and cook until soft."
+  ]
+ },
+ {
+  "name": "Pork Menudo",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Sauté onion and garlic, then add the pork and cook until browned.",
+   "Add the tomato sauce, water, and diced potatoes and carrots.",
+   "Simmer until the pork and vegetables are tender."
+  ]
+ },
+ {
+  "name": "Chicken Afritada",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "tomato sauce"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and chicken.",
+   "Add the tomato sauce and water, and simmer until the chicken is cooked.",
+   "Add the potatoes, carrots, and bell pepper, and simmer until tender."
+  ]
+ },
+ {
+  "name": "Beef Caldereta",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Sauté garlic and onion, then add the beef and cook until browned.",
+   "Add the tomato sauce and water, and simmer until the beef is tender.",
+   "Add the potatoes, carrots, bell pepper, and cheese. Cook until vegetables are soft."
+  ]
+ },
+ {
+  "name": "Spaghetti Bolognese",
+  "time": 45,
+  "ingredients": [
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "300 g", "name": "beef"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1 cup", "name": "tomato sauce"}
+  ],
+  "steps": [
+   "Boil the pasta in salted water until al dente.",
+   "Sauté onion and garlic, then add the ground beef until browned.",
+   "Add the tomato sauce and simmer for 15 minutes. Toss with pasta."
+  ]
+ },
+ {
+  "name": "Beef Lasagna",
+  "time": 60,
+  "ingredients": [
+   {"qty": "12 pieces", "name": "lasagna noodles"},
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Boil lasagna noodles until soft.",
+   "Cook beef with onion and tomato sauce.",
+   "Layer noodles, meat sauce, and cheese in a dish. Bake at 180°C for 25 minutes."
+  ]
+ },
+ {
+  "name": "Chicken Alfredo",
+  "time": 30,
+  "ingredients": [
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "cream"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Boil pasta until al dente.",
+   "Cook sliced chicken and garlic in a pan.",
+   "Add cream and cheese, simmer until thick, and toss with pasta."
+  ]
+ },
+ {
+  "name": "Pad Thai",
+  "time": 25,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1/2 cup", "name": "peanuts"}
+  ],
+  "steps": [
+   "Soak noodles in warm water until soft.",
+   "Stir-fry shrimp and eggs in a wok.",
+   "Add noodles, soy sauce, and peanuts. Toss until heated through."
+  ]
+ },
+ {
+  "name": "Beef Stroganoff",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "mushroom"},
+   {"qty": "1/2 cup", "name": "cream"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "200 g", "name": "pasta"}
+  ],
+  "steps": [
+   "Cook beef strips and onion in a pan until browned.",
+   "Add mushrooms and cream, and simmer.",
+   "Serve over cooked pasta."
+  ]
+ },
+ {
+  "name": "Chili con Carne",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 can", "name": "tomato"},
+   {"qty": "1 can", "name": "beans"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "chili powder"}
+  ],
+  "steps": [
+   "Sauté onion and beef until browned.",
+   "Add tomatoes, beans, and chili powder.",
+   "Simmer for 20 minutes until thick. Serve with rice or bread."
+  ]
+ },
+ {
+  "name": "French Toast",
+  "time": 15,
+  "ingredients": [
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1/2 cup", "name": "milk"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Whisk eggs and milk in a bowl.",
+   "Dip bread slices into the mixture.",
+   "Fry in butter until golden brown on both sides. Serve with syrup."
+  ]
+ },
+ {
+  "name": "Buttermilk Waffles",
+  "time": 20,
+  "ingredients": [
+   {"qty": "2 cups", "name": "flour"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1 1/2 cups", "name": "milk"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Mix dry ingredients, then whisk in eggs, milk, and melted butter.",
+   "Pour batter into a hot waffle iron.",
+   "Cook until golden and crisp. Serve with butter and syrup."
+  ]
+ },
+ {
+  "name": "Shepherds Pie",
+  "time": 50,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "3", "name": "potato"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1/2 cup", "name": "milk"}
+  ],
+  "steps": [
+   "Cook beef, onion, and carrot in a pan.",
+   "Boil and mash potatoes with milk.",
+   "Layer beef mixture in a dish, top with mashed potatoes, and bake until golden."
+  ]
+ },
+ {
+  "name": "Meatloaf",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "beef"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "1 cup", "name": "bread crumbs"},
+   {"qty": "1/2 cup", "name": "tomato sauce"}
+  ],
+  "steps": [
+   "Mix beef, onion, egg, and bread crumbs.",
+   "Shape into a loaf and place in a baking pan.",
+   "Top with tomato sauce and bake at 180°C for 45 minutes."
+  ]
+ },
+ {
+  "name": "Fish and Chips",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "fish"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "2 cups", "name": "oil"},
+   {"qty": "1/2 cup", "name": "milk"}
+  ],
+  "steps": [
+   "Cut potatoes into fries and deep fry until golden.",
+   "Dip the fish in a batter made of flour and milk.",
+   "Deep fry the fish until crispy. Serve with the fries."
+  ]
+ },
+ {
+  "name": "Tonkotsu Ramen",
+  "time": 60,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "2 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Boil pork in water for 45 minutes to make a rich broth. Season with soy sauce.",
+   "Cook noodles in a separate pot.",
+   "Serve noodles in the broth, topped with sliced pork and a soft-boiled egg."
+  ]
+ },
+ {
+  "name": "Chicken Katsu",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "bread crumbs"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Coat chicken in flour, then egg, then bread crumbs.",
+   "Deep fry until golden brown and cooked through.",
+   "Slice and serve with rice and katsu sauce."
+  ]
+ },
+ {
+  "name": "Bibimbap",
+  "time": 30,
+  "ingredients": [
+   {"qty": "3 cups cooked", "name": "rice"},
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1 cup", "name": "spinach"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Stir-fry beef, carrot, and spinach separately.",
+   "Place hot rice in a bowl and arrange the toppings on top.",
+   "Top with a fried egg and serve with soy sauce."
+  ]
+ },
+ {
+  "name": "Kimchi Fried Rice",
+  "time": 15,
+  "ingredients": [
+   {"qty": "3 cups cooked", "name": "rice"},
+   {"qty": "1 cup", "name": "kimchi"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Stir-fry chopped kimchi in oil for 2 minutes.",
+   "Add rice and soy sauce, and stir-fry for 4 minutes.",
+   "Top with a fried egg."
+  ]
+ },
+ {
+  "name": "Beef Pho",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Simmer beef, ginger, and onion in water for 1 hour to make broth.",
+   "Cook noodles and place in a bowl.",
+   "Top with thinly sliced raw beef and pour the hot broth over it."
+  ]
+ },
+ {
+  "name": "Vegetable Spring Rolls",
+  "time": 30,
+  "ingredients": [
+   {"qty": "1 cup shredded", "name": "cabbage"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "20 pieces", "name": "spring roll wrapper"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Mix shredded cabbage and carrots.",
+   "Wrap the vegetables in spring roll wrappers.",
+   "Deep fry until golden and crispy."
+  ]
+ },
+ {
+  "name": "Shrimp Tempura",
+  "time": 20,
+  "ingredients": [
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Mix flour and egg with cold water to make a batter.",
+   "Dip shrimp in batter and deep fry until crispy and golden.",
+   "Serve with a dipping sauce."
+  ]
+ },
+ {
+  "name": "Miso Soup",
+  "time": 15,
+  "ingredients": [
+   {"qty": "2 tbsp", "name": "miso paste"},
+   {"qty": "1 block", "name": "tofu"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Bring water to a simmer and add chopped onion.",
+   "Add cubed tofu.",
+   "Turn off heat, dissolve miso paste into the soup, and serve."
+  ]
+ },
+ {
+  "name": "Classic Cheeseburger",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2 pieces", "name": "bread"},
+   {"qty": "2 slices", "name": "cheese"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "tomato"}
+  ],
+  "steps": [
+   "Form beef into patties and grill or pan-fry until cooked.",
+   "Toast the buns.",
+   "Assemble with cheese, onion, and tomato."
+  ]
+ },
+ {
+  "name": "Club Sandwich",
+  "time": 15,
+  "ingredients": [
+   {"qty": "6 slices", "name": "bread"},
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "4 strips", "name": "bacon"},
+   {"qty": "1", "name": "tomato"},
+   {"qty": "1 head", "name": "lettuce"}
+  ],
+  "steps": [
+   "Toast the bread.",
+   "Cook chicken and bacon.",
+   "Layer bread, chicken, bacon, lettuce, and tomato, then top with another slice of bread."
+  ]
+ },
+ {
+  "name": "BLT Sandwich",
+  "time": 10,
+  "ingredients": [
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "4 strips", "name": "bacon"},
+   {"qty": "1 head", "name": "lettuce"},
+   {"qty": "1", "name": "tomato"}
+  ],
+  "steps": [
+   "Cook the bacon until crispy.",
+   "Toast the bread.",
+   "Layer bacon, lettuce, and tomato between the bread slices."
+  ]
+ },
+ {
+  "name": "Tuna Melt",
+  "time": 15,
+  "ingredients": [
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "1 can", "name": "tuna"},
+   {"qty": "1/2 cup", "name": "cheese"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Mix tuna with mayonnaise (if available) or butter.",
+   "Place tuna and cheese between two slices of bread.",
+   "Grill in a pan until the bread is golden and cheese is melted."
+  ]
+ },
+ {
+  "name": "BBQ Pork Ribs",
+  "time": 90,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "2 tbsp", "name": "vinegar"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Boil the pork ribs until tender.",
+   "Mix tomato sauce, sugar, vinegar, and garlic to make a BBQ sauce.",
+   "Grill the ribs while brushing with the sauce until sticky and charred."
+  ]
+ },
+ {
+  "name": "Pulled Pork Sandwich",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "2 pieces", "name": "bread"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Slow cook the pork with onion and water until it falls apart.",
+   "Shred the pork and mix with tomato sauce.",
+   "Serve the pulled pork inside the buns."
+  ]
+ },
+ {
+  "name": "Macaroni and Cheese",
+  "time": 25,
+  "ingredients": [
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "2 tbsp", "name": "flour"}
+  ],
+  "steps": [
+   "Boil the macaroni until tender.",
+   "Melt butter, whisk in flour, then add milk and cheese to make a sauce.",
+   "Mix the cooked macaroni with the cheese sauce and serve hot."
+  ]
+ },
+ {
+  "name": "Chicken Caesar Salad",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 head", "name": "lettuce"},
+   {"qty": "1/2 cup", "name": "cheese"},
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Cook the chicken and slice it.",
+   "Toast the bread and cut into croutons.",
+   "Toss the lettuce, chicken, croutons, and cheese with a creamy dressing."
+  ]
+ },
+ {
+  "name": "Beef Tacos",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "4", "name": "tortilla"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "tomato"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Cook the beef with chopped onion until browned.",
+   "Warm the tortillas.",
+   "Fill with beef, chopped tomato, and cheese."
+  ]
+ },
+ {
+  "name": "Beef Quesadilla",
+  "time": 15,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "4", "name": "tortilla"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Cook the beef with onion until browned.",
+   "Place beef and cheese on half a tortilla and fold.",
+   "Toast in a pan until crispy and cheese is melted."
+  ]
+ },
+ {
+  "name": "Sweet and Sour Pork",
+  "time": 35,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "pineapple"},
+   {"qty": "1/2 cup", "name": "vinegar"},
+   {"qty": "2 tbsp", "name": "sugar"}
+  ],
+  "steps": [
+   "Fry the pork until golden brown.",
+   "Sauté bell pepper and pineapple.",
+   "Add vinegar and sugar, then toss the pork in the sauce until coated."
+  ]
+ },
+ {
+  "name": "Shrimp Scampi",
+  "time": 20,
+  "ingredients": [
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Boil pasta until al dente.",
+   "Melt butter and sauté garlic and shrimp.",
+   "Toss with pasta, lemon juice, and serve."
+  ]
+ },
+ {
+  "name": "Mushroom Risotto",
+  "time": 35,
+  "ingredients": [
+   {"qty": "1 cup uncooked", "name": "rice"},
+   {"qty": "1 cup sliced", "name": "mushroom"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Sauté onion and mushroom in a pot.",
+   "Add rice and gradually add water, stirring until absorbed.",
+   "Stir in cheese and serve creamy."
+  ]
+ },
+ {
+  "name": "Chicken Pot Pie",
+  "time": 50,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "potato"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1 cup", "name": "flour"}
+  ],
+  "steps": [
+   "Cook chicken and vegetables in a pan.",
+   "Make a creamy sauce with milk and flour.",
+   "Pour into a dish, top with a dough crust, and bake until golden."
+  ]
+ },
+ {
+  "name": "Beef Bulgogi",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Marinate sliced beef in soy sauce, sugar, and garlic.",
+   "Stir-fry the beef and onion in a hot pan until cooked.",
+   "Serve with rice."
+  ]
+ },
+ {
+  "name": "Egg Drop Soup",
+  "time": 15,
+  "ingredients": [
+   {"qty": "2", "name": "egg"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Bring water and chopped onion to a boil.",
+   "Stir in soy sauce.",
+   "Slowly pour in beaten eggs while stirring to create ribbons."
+  ]
+ },
+  {
+  "name": "Chicken Binakol",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "coconut water"},
+   {"qty": "1 cup", "name": "coconut meat"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Sauté ginger, onion, and chicken in a pot.",
+   "Pour in the coconut water and add the coconut meat.",
+   "Simmer until the chicken is tender. Season with salt and pepper."
+  ]
+ },
+ {
+  "name": "Pork Hamonado",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1 cup", "name": "pineapple"},
+   {"qty": "1/2 cup", "name": "soy sauce"},
+   {"qty": "3 tbsp", "name": "sugar"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Marinate the pork in soy sauce, sugar, and pineapple juice.",
+   "Sear the pork in a pot, then add the marinade and pineapple chunks.",
+   "Simmer until the pork is very tender and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Beef Nilaga",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "1", "name": "cabbage"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil the beef in water with onion until tender.",
+   "Add the potatoes and cook until soft.",
+   "Add the cabbage and cook for 5 minutes. Season with salt and pepper."
+  ]
+ },
+ {
+  "name": "Tokwa't Baboy",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1 block", "name": "tofu"},
+   {"qty": "1/4 cup", "name": "soy sauce"},
+   {"qty": "1/4 cup", "name": "vinegar"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Boil the pork until tender, then deep fry until crispy.",
+   "Deep fry the tofu until golden and cut into cubes.",
+   "Mix the pork and tofu with soy sauce, vinegar, and chopped onions."
+  ]
+ },
+ {
+  "name": "Chicken Asado",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1/4 cup", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic and onion, then add the chicken and cook until browned.",
+   "Add soy sauce and sugar.",
+   "Simmer until the chicken is cooked and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Pininyahang Manok",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "pineapple"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Sauté onion and chicken until browned.",
+   "Add the pineapple and bell pepper.",
+   "Pour in the milk and simmer until the chicken is tender."
+  ]
+ },
+ {
+  "name": "Ginataang Hipon",
+  "time": 25,
+  "ingredients": [
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "1", "name": "squash"},
+   {"qty": "1 cup", "name": "green beans"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic and onion, then add the squash and green beans.",
+   "Pour in the coconut milk and simmer until vegetables are tender.",
+   "Add the shrimp and cook until pink."
+  ]
+ },
+ {
+  "name": "Chicken Lollipop",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 cups", "name": "oil"},
+   {"qty": "3 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Fashion the chicken wings into lollipops and marinate in soy sauce.",
+   "Dip in egg and coat with flour.",
+   "Deep fry until golden brown."
+  ]
+ },
+ {
+  "name": "Pork Estofado",
+  "time": 50,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1", "name": "banana"}
+  ],
+  "steps": [
+   "Sauté garlic and onion, then brown the pork.",
+   "Add tomato sauce, water, and sliced bananas (or plantains).",
+   "Simmer until pork is tender, then add potatoes and carrots."
+  ]
+ },
+ {
+  "name": "Beef Asado",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1/2 cup", "name": "soy sauce"},
+   {"qty": "3 tbsp", "name": "sugar"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Marinate beef in soy sauce and sugar.",
+   "Sauté onion and garlic, then add the beef and marinade.",
+   "Simmer until the beef is tender and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Pancit Luglug",
+  "time": 35,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1/2 cup", "name": "flour"}
+  ],
+  "steps": [
+   "Boil the noodles and set aside.",
+   "Make a sauce with shrimp paste, flour, and water.",
+   "Pour the sauce over noodles and top with shrimp and boiled eggs."
+  ]
+ },
+ {
+  "name": "Chicken Sopas",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil chicken in water until cooked, then shred.",
+   "Add pasta and carrots to the broth and cook until tender.",
+   "Stir in the milk and shredded chicken. Season to taste."
+  ]
+ },
+ {
+  "name": "Lomi",
+  "time": 30,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1", "name": "cabbage"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil water and add the pork until cooked.",
+   "Add the thick lomi noodles and cabbage.",
+   "Crack an egg into the soup and stir gently until cooked."
+  ]
+ },
+ {
+  "name": "Beef Mami",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Simmer beef with garlic and onion in water until tender.",
+   "Cook the noodles separately and place in a bowl.",
+   "Pour the hot beef broth and sliced beef over the noodles."
+  ]
+ },
+ {
+  "name": "Pork Afritada",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "tomato sauce"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and pork until browned.",
+   "Add tomato sauce and water, and simmer until pork is tender.",
+   "Add potatoes, carrots, and bell pepper. Cook until soft."
+  ]
+ },
+ {
+  "name": "Chicken Pastel",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "2", "name": "sausage"},
+   {"qty": "1", "name": "potato"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Cook chicken and onion in a pot with a little water.",
+   "Add sliced sausages and potatoes.",
+   "Pour in the milk and simmer until the sauce is creamy."
+  ]
+ },
+ {
+  "name": "Chicken Tikka Masala",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1/2 cup", "name": "cream"},
+   {"qty": "2 tbsp", "name": "curry powder"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Sauté onion and chicken in a pan.",
+   "Add curry powder and tomato sauce, and simmer for 15 minutes.",
+   "Stir in the cream and cook for another 5 minutes. Serve with rice."
+  ]
+ },
+ {
+  "name": "Roast Chicken",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "chicken"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "lemon"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Rub the chicken with butter, salt, and pepper. Stuff with lemon.",
+   "Place in a roasting pan with potatoes and carrots.",
+   "Roast at 200°C for 45 minutes until golden and cooked through."
+  ]
+ },
+ {
+  "name": "Beef Pot Roast",
+  "time": 90,
+  "ingredients": [
+   {"qty": "500 g", "name": "beef"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "carrot"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sear the beef in a large pot.",
+   "Add water, onion, potatoes, and carrots.",
+   "Cover and simmer for 1.5 hours until the beef falls apart."
+  ]
+ },
+ {
+  "name": "Chicken Tenders",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Slice chicken into strips.",
+   "Dip in egg then coat with flour.",
+   "Deep fry until golden and crispy."
+  ]
+ },
+ {
+  "name": "Honey Garlic Chicken",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1/4 cup", "name": "honey"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "3 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Sear chicken in a pan until golden.",
+   "Mix honey, garlic, and soy sauce. Pour over the chicken.",
+   "Simmer until the chicken is cooked and the sauce is sticky."
+  ]
+ },
+ {
+  "name": "Teriyaki Salmon",
+  "time": 20,
+  "ingredients": [
+   {"qty": "2 fillets", "name": "salmon"},
+   {"qty": "1/4 cup", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "1 thumb", "name": "ginger"}
+  ],
+  "steps": [
+   "Mix soy sauce, sugar, and ginger.",
+   "Pan-fry the salmon until almost cooked.",
+   "Pour in the sauce and simmer until it thickens and glazes the salmon."
+  ]
+ },
+ {
+  "name": "Lemon Butter Pasta",
+  "time": 15,
+  "ingredients": [
+   {"qty": "200 g", "name": "pasta"},
+   {"qty": "3 tbsp", "name": "butter"},
+   {"qty": "1", "name": "lemon"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Boil pasta until al dente.",
+   "Melt butter and mix with lemon juice and zest.",
+   "Toss the pasta in the lemon butter and top with cheese."
+  ]
+ },
+ {
+  "name": "Garlic Bread",
+  "time": 10,
+  "ingredients": [
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "3 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Mix softened butter with minced garlic.",
+   "Spread on the bread slices.",
+   "Toast in the oven or a pan until golden."
+  ]
+ },
+ {
+  "name": "Caesar Wrap",
+  "time": 10,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "4", "name": "tortilla"},
+   {"qty": "1 head", "name": "lettuce"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Cook and slice the chicken.",
+   "Toss lettuce and chicken with Caesar dressing (or mayonnaise).",
+   "Wrap in tortillas with cheese."
+  ]
+ },
+ {
+  "name": "Buffalo Wings",
+  "time": 35,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1/2 cup", "name": "vinegar"},
+   {"qty": "2", "name": "chili"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Bake or fry the chicken wings until crispy.",
+   "Melt butter and mix with vinegar and chili (hot sauce).",
+   "Toss the cooked wings in the spicy sauce."
+  ]
+ },
+ {
+  "name": "Mozzarella Sticks",
+  "time": 20,
+  "ingredients": [
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1 cup", "name": "bread crumbs"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Cut mozzarella into sticks.",
+   "Dip in egg and coat with bread crumbs. Freeze for 10 minutes.",
+   "Deep fry until golden brown."
+  ]
+ },
+ {
+  "name": "Pizza Margherita",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1", "name": "flour"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1", "name": "tomato"}
+  ],
+  "steps": [
+   "Roll out the dough.",
+   "Spread tomato sauce and top with cheese and sliced tomatoes.",
+   "Bake at 220°C for 10-12 minutes until crust is golden."
+  ]
+ },
+ {
+  "name": "Cheeseburger Sliders",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "4 pieces", "name": "bread"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Form small beef patties and cook in a pan.",
+   "Top with cheese and let melt.",
+   "Place in small buns with chopped onion."
+  ]
+ },
+ {
+  "name": "Beef and Barley Soup",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "barley"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sear beef in a pot with onion.",
+   "Add water, carrots, and barley.",
+   "Simmer for 45 minutes until the beef is tender and barley is soft."
+  ]
+ },
+ {
+  "name": "French Onion Soup",
+  "time": 45,
+  "ingredients": [
+   {"qty": "3", "name": "onion"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "1/2 cup", "name": "cheese"},
+   {"qty": "4 slices", "name": "bread"}
+  ],
+  "steps": [
+   "Slowly caramelize sliced onions in butter (about 20 minutes).",
+   "Add water (or beef broth) and simmer for 15 minutes.",
+   "Top with toasted bread and cheese, then broil until melted."
+  ]
+ },
+ {
+  "name": "Bruschetta",
+  "time": 10,
+  "ingredients": [
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "2", "name": "tomato"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Toast the bread slices.",
+   "Rub raw garlic on the toasted bread.",
+   "Top with diced tomatoes mixed with oil, salt, and pepper."
+  ]
+ },
+ {
+  "name": "Caprese Salad",
+  "time": 10,
+  "ingredients": [
+   {"qty": "2", "name": "tomato"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Slice the tomatoes and mozzarella cheese.",
+   "Arrange them on a plate, alternating slices.",
+   "Drizzle with oil, salt, and pepper."
+  ]
+ },
+ {
+  "name": "Chicken Piccata",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1", "name": "lemon"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "1/2 cup", "name": "flour"}
+  ],
+  "steps": [
+   "Coat chicken in flour and pan-fry until golden.",
+   "Remove chicken. In the same pan, add lemon juice and butter.",
+   "Pour the sauce over the chicken and serve."
+  ]
+ },
+ {
+  "name": "Sloppy Joes",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 pieces", "name": "bread"}
+  ],
+  "steps": [
+   "Cook beef and onion until browned.",
+   "Add tomato sauce and simmer for 10 minutes.",
+   "Spoon the mixture onto buns and serve."
+  ]
+ },
+ {
+  "name": "Veggie Quesadilla",
+  "time": 15,
+  "ingredients": [
+   {"qty": "4", "name": "tortilla"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1 cup sliced", "name": "mushroom"}
+  ],
+  "steps": [
+   "Sauté bell pepper, onion, and mushrooms until soft.",
+   "Place vegetables and cheese on a tortilla and fold.",
+   "Toast in a pan until golden and cheese is melted."
+  ]
+ },
+ {
+  "name": "Jambalaya",
+  "time": 40,
+  "ingredients": [
+   {"qty": "3 cups cooked", "name": "rice"},
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "3", "name": "sausage"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Sauté sausage, onion, and bell pepper.",
+   "Add shrimp and cook until pink.",
+   "Stir in the cooked rice and season with salt and pepper."
+  ]
+ },
+ {
+  "name": "Gumbo",
+  "time": 45,
+  "ingredients": [
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "3", "name": "sausage"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Brown the sausage with onion and bell pepper.",
+   "Add water and simmer for 20 minutes.",
+   "Add shrimp and cook for 5 minutes. Serve over rice."
+  ]
+ },
+ {
+  "name": "Baked Potato Soup",
+  "time": 30,
+  "ingredients": [
+   {"qty": "3", "name": "potato"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 strips", "name": "bacon"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Boil potatoes until soft and mash them slightly.",
+   "Fry bacon and onion, then add to the potatoes with milk.",
+   "Simmer until thick, then top with cheese."
+  ]
+ },
+ {
+  "name": "Broccoli Cheddar Soup",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1 head", "name": "broccoli"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil broccoli and onion in water until tender.",
+   "Blend slightly, then stir in milk and cheese.",
+   "Heat until the cheese is melted and the soup is creamy."
+  ]
+ },
+ {
+  "name": "Beef Chili",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 can", "name": "beans"},
+   {"qty": "1 can", "name": "tomato"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "curry powder"}
+  ],
+  "steps": [
+   "Brown the beef with chopped onion.",
+   "Add tomatoes, beans, and chili powder.",
+   "Simmer for 25 minutes until thick."
+  ]
+ },
+ {
+  "name": "Chicken Potstickers",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup shredded", "name": "cabbage"},
+   {"qty": "20 pieces", "name": "dumpling wrapper"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Mix ground chicken, cabbage, and soy sauce.",
+   "Wrap in dumpling wrappers.",
+   "Pan-fry until the bottoms are crispy, then add a little water and cover to steam."
+  ]
+ },
+ {
+  "name": "Pork Gyoza",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1 cup shredded", "name": "cabbage"},
+   {"qty": "20 pieces", "name": "dumpling wrapper"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Mix ground pork, cabbage, and soy sauce.",
+   "Wrap in dumpling wrappers.",
+   "Pan-fry until crispy, then steam with a splash of water."
+  ]
+ },
+ {
+  "name": "Vegetable Lo Mein",
+  "time": 20,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup shredded", "name": "cabbage"},
+   {"qty": "3 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Boil noodles until soft.",
+   "Stir-fry carrots, bell pepper, and cabbage in a wok.",
+   "Add noodles and soy sauce, and toss until well mixed."
+  ]
+ },
+ {
+  "name": "Beef and Broccoli",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 head", "name": "broccoli"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Stir-fry beef and garlic until browned.",
+   "Add broccoli and a splash of water, cover to steam for 3 minutes.",
+   "Add soy sauce and toss until coated."
+  ]
+ },
+ {
+  "name": "Sweet and Sour Chicken",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "pineapple"},
+   {"qty": "1/2 cup", "name": "vinegar"},
+   {"qty": "2 tbsp", "name": "sugar"}
+  ],
+  "steps": [
+   "Fry chicken until golden.",
+   "Sauté bell pepper and pineapple.",
+   "Add vinegar and sugar, then toss the chicken in the sauce."
+  ]
+ },
+ {
+  "name": "Orange Chicken",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "1/2 cup", "name": "sugar"},
+   {"qty": "1/2 cup", "name": "vinegar"},
+   {"qty": "1", "name": "orange"}
+  ],
+  "steps": [
+   "Coat chicken in flour and fry until crispy.",
+   "Make a sauce with orange juice, sugar, and vinegar.",
+   "Toss the chicken in the sauce until coated."
+  ]
+ },
+ {
+  "name": "Sesame Chicken",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "1 tbsp", "name": "sesame seeds"}
+  ],
+  "steps": [
+   "Coat chicken in flour and fry until crispy.",
+   "Mix soy sauce and sugar, and simmer until thick.",
+   "Toss chicken in the sauce and sprinkle with sesame seeds."
+  ]
+ },
+ {
+  "name": "Mongolian Beef",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"}
+  ],
+  "steps": [
+   "Slice beef thinly and fry in a hot pan.",
+   "Add sliced onion.",
+   "Mix soy sauce and sugar, pour over beef, and cook until sticky."
+  ]
+ },
+ {
+  "name": "Fried Ice Cream",
+  "time": 20,
+  "ingredients": [
+   {"qty": "2 scoops", "name": "ice cream"},
+   {"qty": "1 cup", "name": "bread crumbs"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Scoop ice cream into balls and freeze until hard.",
+   "Dip in egg and coat with bread crumbs. Freeze again.",
+   "Deep fry quickly until golden and serve immediately."
+  ]
+ },
+  {
+  "name": "Pork BBQ Skewers",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1/2 cup", "name": "soy sauce"},
+   {"qty": "3 tbsp", "name": "sugar"},
+   {"qty": "1", "name": "lemon"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Slice pork thinly and marinate in soy sauce, sugar, lemon, and garlic.",
+   "Thread the pork onto skewers.",
+   "Grill over hot coals or pan-fry until cooked and slightly charred."
+  ]
+ },
+ {
+  "name": "Kwek-Kwek (Orange Quail Eggs)",
+  "time": 15,
+  "ingredients": [
+   {"qty": "12 pieces", "name": "quail eggs"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "1/2 cup", "name": "water"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Boil the quail eggs, peel them, and set aside.",
+   "Mix flour, water, and orange food coloring to make a batter.",
+   "Coat the eggs in batter and deep fry until crispy."
+  ]
+ },
+ {
+  "name": "Arroz a la Cubana",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "2", "name": "banana"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "3 cups cooked", "name": "rice"}
+  ],
+  "steps": [
+   "Sauté ground beef with garlic and onion until cooked.",
+   "Fry the sliced potatoes and bananas separately.",
+   "Serve the beef, potatoes, bananas, and a fried egg over rice."
+  ]
+ },
+ {
+  "name": "Pancit Malabon",
+  "time": 40,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "2 tbsp", "name": "shrimp paste"},
+   {"qty": "1 cup shredded", "name": "cabbage"},
+   {"qty": "2", "name": "egg"}
+  ],
+  "steps": [
+   "Boil thick rice noodles and set aside.",
+   "Sauté shrimp, cabbage, and shrimp paste. Add a little water to make a sauce.",
+   "Toss the noodles in the sauce and top with sliced boiled eggs."
+  ]
+ },
+ {
+  "name": "Pancit Molo",
+  "time": 35,
+  "ingredients": [
+   {"qty": "20 pieces", "name": "dumpling wrapper"},
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Mix ground pork with garlic and onion, and wrap in dumpling wrappers.",
+   "Boil the dumplings in water to make a savory broth.",
+   "Season with salt and pepper and serve hot."
+  ]
+ },
+ {
+  "name": "La Paz Batchoy",
+  "time": 45,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "4 cups", "name": "water"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2", "name": "egg"}
+  ],
+  "steps": [
+   "Simmer pork in water with garlic to make a rich broth.",
+   "Cook noodles separately and place in a bowl.",
+   "Pour the broth and sliced pork over the noodles, topping with a raw egg and crispy pork rinds."
+  ]
+ },
+ {
+  "name": "Pata Tim",
+  "time": 90,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "1/2 cup", "name": "soy sauce"},
+   {"qty": "1/4 cup", "name": "vinegar"},
+   {"qty": "1 cup", "name": "sugar"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Boil pork leg until tender, then set aside.",
+   "In a pot, mix soy sauce, vinegar, sugar, and garlic to make a sweet-savory sauce.",
+   "Simmer the pork in the sauce until it becomes sticky and glazed."
+  ]
+ },
+ {
+  "name": "Paksiw na Pata",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "1/2 cup", "name": "vinegar"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "banana"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Place the pork, vinegar, soy sauce, and garlic in a pot.",
+   "Add the sliced banana (or banana blossoms) and a little water.",
+   "Simmer until the pork is tender and the sauce is reduced."
+  ]
+ },
+ {
+  "name": "Halabos na Hipon",
+  "time": 15,
+  "ingredients": [
+   {"qty": "400 g", "name": "shrimp"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "1/2 cup", "name": "water"}
+  ],
+  "steps": [
+   "Melt butter in a pan and sauté garlic.",
+   "Add the shrimp and water.",
+   "Cover and simmer until the shrimp turns pink and the water evaporates."
+  ]
+ },
+ {
+  "name": "Inihaw na Pusit",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "squid"},
+   {"qty": "1/4 cup", "name": "soy sauce"},
+   {"qty": "1", "name": "lemon"},
+   {"qty": "2 tbsp", "name": "sugar"}
+  ],
+  "steps": [
+   "Marinate the squid in soy sauce, lemon, and sugar for 10 minutes.",
+   "Grill over hot coals for 3-4 minutes per side.",
+   "Slice and serve with a vinegar dip."
+  ]
+ },
+ {
+  "name": "Kinilaw na Tuna",
+  "time": 15,
+  "ingredients": [
+   {"qty": "400 g", "name": "tuna"},
+   {"qty": "1/2 cup", "name": "vinegar"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "1", "name": "chili"}
+  ],
+  "steps": [
+   "Cut fresh tuna into cubes.",
+   "Soak the tuna in vinegar for 5 minutes to cure it.",
+   "Drain and mix with chopped onion, ginger, and chili. Serve chilled."
+  ]
+ },
+ {
+  "name": "Igado",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "liver"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1/4 cup", "name": "vinegar"},
+   {"qty": "3 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Sauté garlic and onion, then add the pork and liver.",
+   "Add vinegar and soy sauce, and simmer for 15 minutes.",
+   "Add the bell pepper and cook until tender."
+  ]
+ },
+ {
+  "name": "Dinakdakan",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1/4 cup", "name": "vinegar"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2", "name": "chili"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Boil pork until tender, then grill until slightly charred. Chop into small pieces.",
+   "Mix the pork with chopped onion, chili, vinegar, and lemon juice.",
+   "Serve with a creamy mayonnaise-based sauce if desired."
+  ]
+ },
+ {
+  "name": "Poqui-poqui",
+  "time": 20,
+  "ingredients": [
+   {"qty": "2", "name": "eggplant"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "tomato"}
+  ],
+  "steps": [
+   "Grill the eggplants until soft, then peel and mash them.",
+   "Sauté onion and tomato, then add the mashed eggplant.",
+   "Pour in beaten eggs and scramble until cooked."
+  ]
+ },
+ {
+  "name": "Ilocos Bagnet",
+  "time": 60,
+  "ingredients": [
+   {"qty": "500 g", "name": "pork"},
+   {"qty": "2 tbsp", "name": "salt"},
+   {"qty": "4 cups", "name": "oil"},
+   {"qty": "1", "name": "tomato"}
+  ],
+  "steps": [
+   "Boil pork belly in salted water until tender.",
+   "Air dry, then deep fry until the skin is completely crispy and blistered.",
+   "Chop and serve with chopped tomatoes."
+  ]
+ },
+ {
+  "name": "Pork Embutido",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "sausage"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1/2 cup", "name": "bread crumbs"}
+  ],
+  "steps": [
+   "Mix ground pork, chopped sausage, carrots, eggs, and bread crumbs.",
+   "Shape into a log and wrap tightly in foil.",
+   "Steam for 45 minutes, then let it cool before slicing."
+  ]
+ },
+ {
+  "name": "Everlasting (Marikina Meatloaf)",
+  "time": 50,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1/2 cup", "name": "tomato sauce"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Mix ground pork with chopped carrots, bell peppers, and tomato sauce.",
+   "Place in a loaf pan and top with cheese.",
+   "Bake at 180°C for 40 minutes until cooked through."
+  ]
+ },
+ {
+  "name": "Valenciana",
+  "time": 45,
+  "ingredients": [
+   {"qty": "3 cups cooked", "name": "rice"},
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "2", "name": "sausage"}
+  ],
+  "steps": [
+   "Sauté chicken, sausage, bell pepper, and carrots.",
+   "Add the cooked rice and mix well.",
+   "Cook for another 5 minutes to let the flavors blend."
+  ]
+ },
+ {
+  "name": "Callos",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "sausage"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "tomato sauce"}
+  ],
+  "steps": [
+   "Boil beef tripe (or beef chunks) until very tender.",
+   "Sauté sausage, carrots, and bell pepper.",
+   "Add the beef, tomato sauce, and broth. Simmer until thick."
+  ]
+ },
+ {
+  "name": "Lengua Estofada",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1/2 cup", "name": "cheese"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Boil ox tongue (or beef) until tender and slice.",
+   "Sauté onion and add the meat, tomato sauce, and potatoes.",
+   "Simmer until potatoes are soft, then top with cheese."
+  ]
+ },
+ {
+  "name": "Bangus Sisig",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "fish"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "lemon"},
+   {"qty": "1", "name": "chili"}
+  ],
+  "steps": [
+   "Fry or grill the bangus (milkfish) until crispy, then flake the meat.",
+   "Mix the fish with chopped onion, soy sauce, lemon, and chili.",
+   "Serve sizzling on a hot plate."
+  ]
+ },
+ {
+  "name": "Tuna Sisig",
+  "time": 20,
+  "ingredients": [
+   {"qty": "2 cans", "name": "tuna"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "chili"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Drain the tuna and mix with chopped onion, chili, and lemon.",
+   "Cook in a hot pan for 3 minutes.",
+   "Crack an egg over the mixture, stir until cooked, and serve."
+  ]
+ },
+ {
+  "name": "Chicken Sisig",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "lemon"},
+   {"qty": "1", "name": "chili"}
+  ],
+  "steps": [
+   "Boil and shred the chicken, then fry until slightly crispy.",
+   "Mix with chopped onion, soy sauce, lemon, and chili.",
+   "Serve hot on a sizzling plate."
+  ]
+ },
+ {
+  "name": "Sizzling Gambas",
+  "time": 20,
+  "ingredients": [
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "chili"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Melt butter in a sizzling plate or pan.",
+   "Sauté garlic, onion, and chili.",
+   "Add the shrimp and cook until pink and coated in the garlic butter sauce."
+  ]
+ },
+ {
+  "name": "Cheesy Baked Tahong",
+  "time": 20,
+  "ingredients": [
+   {"qty": "500 g", "name": "mussels"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1/2 cup", "name": "butter"},
+   {"qty": "1 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Clean the mussels and boil until the shells open.",
+   "Mix minced garlic with softened butter and top each mussel.",
+   "Sprinkle with cheese and bake at 200°C until the cheese melts."
+  ]
+ },
+ {
+  "name": "Hawaiian Pizza",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1", "name": "flour"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "100 g", "name": "ham"},
+   {"qty": "1 cup", "name": "pineapple"}
+  ],
+  "steps": [
+   "Roll out the pizza dough and spread tomato sauce.",
+   "Top with cheese, ham, and pineapple chunks.",
+   "Bake at 220°C for 12-15 minutes until crust is golden."
+  ]
+ },
+ {
+  "name": "Pepperoni Pizza",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1", "name": "flour"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "100 g", "name": "pepperoni"}
+  ],
+  "steps": [
+   "Roll out the dough and spread tomato sauce.",
+   "Top with cheese and pepperoni slices.",
+   "Bake at 220°C for 12-15 minutes until crispy."
+  ]
+ },
+ {
+  "name": "Beef Shawarma Rice",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2 cups cooked", "name": "rice"},
+   {"qty": "1", "name": "cucumber"},
+   {"qty": "1", "name": "tomato"},
+   {"qty": "2 tbsp", "name": "curry powder"}
+  ],
+  "steps": [
+   "Marinate and pan-fry the beef with curry powder until cooked.",
+   "Serve the beef over rice.",
+   "Top with chopped cucumber and tomato."
+  ]
+ },
+ {
+  "name": "Pork Katsu Curry",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1 cup", "name": "bread crumbs"},
+   {"qty": "2", "name": "potato"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "2 tbsp", "name": "curry powder"}
+  ],
+  "steps": [
+   "Coat pork in bread crumbs and fry until crispy. Slice.",
+   "Boil potatoes and carrots in water with curry powder to make a curry sauce.",
+   "Serve the sliced pork katsu over rice with the curry sauce."
+  ]
+ },
+ {
+  "name": "Chicken Karaage",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 cups", "name": "oil"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Marinate chicken in soy sauce and garlic.",
+   "Coat in flour.",
+   "Deep fry until golden and crispy."
+  ]
+ },
+ {
+  "name": "Oyakodon",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 cups cooked", "name": "rice"}
+  ],
+  "steps": [
+   "Simmer chicken and sliced onion in soy sauce and a little water.",
+   "Pour beaten eggs over the chicken and cover until the eggs are just set.",
+   "Slide the mixture over a bowl of hot rice."
+  ]
+ },
+ {
+  "name": "Katsudon",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1 cup", "name": "bread crumbs"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 cups cooked", "name": "rice"}
+  ],
+  "steps": [
+   "Bread and fry the pork until crispy, then slice.",
+   "Simmer onion and sliced pork in a pan with soy sauce and water.",
+   "Pour beaten egg over the top, cover to cook, and serve over rice."
+  ]
+ },
+ {
+  "name": "Gyudon",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1/4 cup", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "2 cups cooked", "name": "rice"}
+  ],
+  "steps": [
+   "Simmer thinly sliced beef and onions in soy sauce and sugar.",
+   "Cook until the beef is tender and the sauce is slightly thick.",
+   "Serve over a bowl of warm rice."
+  ]
+ },
+ {
+  "name": "Japchae",
+  "time": 25,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1 cup", "name": "spinach"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"}
+  ],
+  "steps": [
+   "Boil sweet potato noodles and set aside.",
+   "Stir-fry carrots and spinach.",
+   "Mix the noodles and vegetables with soy sauce and sugar."
+  ]
+ },
+ {
+  "name": "Tteokbokki",
+  "time": 20,
+  "ingredients": [
+   {"qty": "300 g", "name": "rice cakes"},
+   {"qty": "2", "name": "chili"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Boil water and add the rice cakes and sliced onion.",
+   "Add soy sauce, sugar, and chili paste (or chopped chili).",
+   "Simmer until the sauce thickens and the rice cakes are soft."
+  ]
+ },
+ {
+  "name": "Buldak (Spicy Fire Chicken)",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "3", "name": "chili"},
+   {"qty": "1/2 cup", "name": "cheese"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Stir-fry chicken with garlic, soy sauce, and lots of chili until cooked.",
+   "Transfer to a pan and top with melted cheese.",
+   "Serve very hot with rice."
+  ]
+ },
+ {
+  "name": "Beef Wellington",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1", "name": "flour"},
+   {"qty": "1 cup sliced", "name": "mushroom"},
+   {"qty": "100 g", "name": "ham"},
+   {"qty": "1", "name": "egg"}
+  ],
+  "steps": [
+   "Sear the beef fillet until browned.",
+   "Wrap the beef in ham and a mushroom mixture.",
+   "Wrap in pastry dough, brush with egg, and bake at 200°C for 25 minutes."
+  ]
+ },
+ {
+  "name": "Ratatouille",
+  "time": 40,
+  "ingredients": [
+   {"qty": "1", "name": "eggplant"},
+   {"qty": "1", "name": "zucchini"},
+   {"qty": "2", "name": "tomato"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Slice all vegetables thinly.",
+   "Sauté onion and bell pepper, then spread them on the bottom of a baking dish.",
+   "Arrange the sliced vegetables on top, drizzle with oil, and bake for 30 minutes."
+  ]
+ },
+ {
+  "name": "Quiche Lorraine",
+  "time": 45,
+  "ingredients": [
+   {"qty": "1", "name": "flour"},
+   {"qty": "4 strips", "name": "bacon"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "3", "name": "egg"},
+   {"qty": "1 cup", "name": "milk"}
+  ],
+  "steps": [
+   "Press dough into a pie pan to make the crust.",
+   "Sprinkle cooked bacon and cheese over the crust.",
+   "Whisk eggs and milk, pour into the crust, and bake at 180°C for 30 minutes."
+  ]
+ },
+ {
+  "name": "Beef Bourguignon",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1 cup sliced", "name": "mushroom"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sear the beef in a pot, then add carrots, onion, and mushrooms.",
+   "Pour in water (traditionally red wine) and bring to a boil.",
+   "Cover and simmer for 1 hour until the beef is very tender."
+  ]
+ },
+ {
+  "name": "Coq au Vin",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup sliced", "name": "mushroom"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Brown the chicken pieces in a pot.",
+   "Add onions, carrots, and mushrooms.",
+   "Pour in water (or wine) and simmer for 40 minutes until the chicken is tender."
+  ]
+ },
+ {
+  "name": "Chicken and Waffles",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "2 cups", "name": "flour"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Coat chicken in flour and deep fry until crispy.",
+   "Mix flour, eggs, and milk to make waffle batter. Cook in a waffle iron.",
+   "Serve the crispy chicken on top of the waffles."
+  ]
+ },
+ {
+  "name": "Biscuits and Gravy",
+  "time": 30,
+  "ingredients": [
+   {"qty": "2 cups", "name": "flour"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "3", "name": "sausage"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Make biscuits by mixing flour, milk, and butter, and bake until golden.",
+   "Fry the sausage and crumble it into a pan with milk and flour to make a white gravy.",
+   "Pour the sausage gravy over the warm biscuits."
+  ]
+ },
+ {
+  "name": "Philly Cheesesteak",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "2 pieces", "name": "bread"}
+  ],
+  "steps": [
+   "Slice the beef very thinly and stir-fry with onions and bell peppers.",
+   "Melt cheese over the meat mixture in the pan.",
+   "Scoop the cheesy meat into a sliced bread roll."
+  ]
+ },
+ {
+  "name": "Reuben Sandwich",
+  "time": 15,
+  "ingredients": [
+   {"qty": "4 slices", "name": "bread"},
+   {"qty": "200 g", "name": "beef"},
+   {"qty": "1 cup", "name": "cheese"},
+   {"qty": "1 cup shredded", "name": "cabbage"}
+  ],
+  "steps": [
+   "Layer sliced corned beef, cheese, and sauerkraut (or cabbage) between bread slices.",
+   "Butter the outside of the bread.",
+   "Grill in a pan until the bread is toasted and cheese is melted."
+  ]
+ },
+ {
+  "name": "Gyro Sandwich",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2 pieces", "name": "bread"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "tomato"},
+   {"qty": "1/2 cup", "name": "cream"}
+  ],
+  "steps": [
+   "Cook the beef with Mediterranean spices and slice it.",
+   "Warm the pita bread and spread with a cucumber-yogurt sauce (or cream).",
+   "Fill with the meat, chopped onions, and tomatoes."
+  ]
+ },
+ {
+  "name": "Falafel Wrap",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1 can", "name": "chickpeas"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "4", "name": "tortilla"},
+   {"qty": "1", "name": "cucumber"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Mash chickpeas with flour and spices to form small patties.",
+   "Pan-fry the patties in oil until crispy.",
+   "Wrap the falafel in tortillas with sliced cucumber and a creamy sauce."
+  ]
+ },
+ {
+  "name": "Greek Salad",
+  "time": 10,
+  "ingredients": [
+   {"qty": "2", "name": "tomato"},
+   {"qty": "1", "name": "cucumber"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1/2 cup", "name": "cheese"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Chop the tomatoes, cucumber, and onion into large chunks.",
+   "Toss with olive oil and salt.",
+   "Top with a block of feta cheese and serve."
+  ]
+ },
+ {
+  "name": "Chicken Biryani",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "3 cups cooked", "name": "rice"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "curry powder"},
+   {"qty": "1/2 cup", "name": "cream"}
+  ],
+  "steps": [
+   "Sauté onions and chicken with curry powder until browned.",
+   "Add the cream and simmer until the chicken is cooked.",
+   "Layer the chicken and cooked rice in a pot, cover, and steam for 10 minutes."
+  ]
+ },
+ {
+  "name": "Palak Paneer",
+  "time": 30,
+  "ingredients": [
+   {"qty": "2 cups", "name": "spinach"},
+   {"qty": "1 block", "name": "tofu"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "curry powder"},
+   {"qty": "1/2 cup", "name": "cream"}
+  ],
+  "steps": [
+   "Blanch and blend the spinach into a puree.",
+   "Sauté onions and curry powder, then add the spinach puree and cream.",
+   "Add cubes of firm tofu (or paneer cheese) and simmer for 10 minutes."
+  ]
+ },
+  {
+  "name": "Pochero (Beef Stew with Saba)",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "2", "name": "banana"},
+   {"qty": "1", "name": "cabbage"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Boil the beef until tender, saving the broth.",
+   "Sauté onion and garlic, add the beef and tomato sauce.",
+   "Add the broth and saba bananas. Simmer until the bananas are soft, then add the cabbage."
+  ]
+ },
+ {
+  "name": "Humba (Visayan Sweet Pork)",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1/4 cup", "name": "vinegar"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "1 cup", "name": "pineapple"}
+  ],
+  "steps": [
+   "Sear the pork in a pot until browned.",
+   "Add vinegar, soy sauce, sugar, and pineapple chunks.",
+   "Simmer for 45 minutes until the pork is very tender and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Kansi (Ilonggo Sour Beef Soup)",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 pack", "name": "tamarind mix"},
+   {"qty": "1", "name": "banana"},
+   {"qty": "1", "name": "radish"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil the beef in water until very tender.",
+   "Add the tamarind mix to create a sour broth.",
+   "Add the saba banana and radish, and simmer until tender. Season with salt."
+  ]
+ },
+ {
+  "name": "Sinanglay (Fish in Taro Leaves)",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "fish"},
+   {"qty": "2 cups", "name": "taro leaves"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2", "name": "chili"}
+  ],
+  "steps": [
+   "Wrap the fish fillets in taro leaves.",
+   "Place in a pan with coconut milk, onion, and chili.",
+   "Simmer gently for 15-20 minutes until the fish is cooked and the leaves are tender."
+  ]
+ },
+ {
+  "name": "Kinunot (Shredded Fish in Coconut)",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "fish"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "1 cup", "name": "spinach"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2", "name": "chili"}
+  ],
+  "steps": [
+   "Boil the fish until cooked, then shred the meat.",
+   "Sauté onion and chili, then add the coconut milk.",
+   "Add the shredded fish and spinach. Simmer until the sauce thickens."
+  ]
+ },
+ {
+  "name": "Tiyula Itum (Black Beef Stew)",
+  "time": 60,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "coconut milk"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Sear the beef with garlic, onion, and ginger.",
+   "Add the coconut milk and bring to a simmer.",
+   "Cook until the beef is tender and the sauce is thick and dark."
+  ]
+ },
+ {
+  "name": "Chicken Cacciatore",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup sliced", "name": "mushroom"},
+   {"qty": "1", "name": "onion"}
+  ],
+  "steps": [
+   "Brown the chicken pieces in a pan.",
+   "Add onions, bell peppers, and mushrooms, and sauté.",
+   "Pour in the tomato sauce and simmer for 25 minutes until the chicken is cooked."
+  ]
+ },
+ {
+  "name": "Pork Tacos al Pastor",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "4", "name": "tortilla"},
+   {"qty": "1 cup", "name": "pineapple"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2", "name": "chili"}
+  ],
+  "steps": [
+   "Marinate thinly sliced pork in chili and spices.",
+   "Sear the pork in a hot pan until cooked and slightly charred.",
+   "Serve on warm tortillas with chopped pineapple and onion."
+  ]
+ },
+ {
+  "name": "Laksa",
+  "time": 35,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "2 tbsp", "name": "curry powder"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sauté curry powder in a pot, then add coconut milk and water.",
+   "Bring to a boil, then add the shrimp and cook until pink.",
+   "Pour the soup over cooked noodles and serve."
+  ]
+ },
+ {
+  "name": "Beef Rendang",
+  "time": 90,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2", "name": "chili"}
+  ],
+  "steps": [
+   "Blend onion, garlic, and chili into a paste.",
+   "Sear the beef with the paste, then pour in the coconut milk.",
+   "Simmer for 1 hour until the beef is tender and the sauce is completely reduced and dark."
+  ]
+ },
+ {
+  "name": "Tom Yum Goong",
+  "time": 20,
+  "ingredients": [
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "1 cup sliced", "name": "mushroom"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "1", "name": "lemon"},
+   {"qty": "2", "name": "chili"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil water with ginger and chili.",
+   "Add mushrooms and shrimp, and cook until the shrimp are pink.",
+   "Season with lemon juice and salt for a spicy-sour flavor."
+  ]
+ },
+ {
+  "name": "Pad See Ew",
+  "time": 20,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "3 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"}
+  ],
+  "steps": [
+   "Stir-fry chicken in a hot wok.",
+   "Add flat rice noodles and soy sauce.",
+   "Push noodles aside, scramble the eggs, then mix with sugar and serve."
+  ]
+ },
+ {
+  "name": "Banh Mi",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2 pieces", "name": "bread"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "cucumber"},
+   {"qty": "2 tbsp", "name": "vinegar"}
+  ],
+  "steps": [
+   "Pickle the shredded carrots in vinegar and sugar.",
+   "Cook the pork and slice it.",
+   "Stuff the bread with pork, pickled carrots, and sliced cucumber."
+  ]
+ },
+ {
+  "name": "Paella",
+  "time": 50,
+  "ingredients": [
+   {"qty": "2 cups", "name": "rice"},
+   {"qty": "300 g", "name": "shrimp"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "2 tbsp", "name": "curry powder"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sauté bell peppers and shrimp in a wide pan.",
+   "Add rice and curry powder (as a substitute for saffron).",
+   "Pour in the water and simmer without stirring until the rice is cooked."
+  ]
+ },
+ {
+  "name": "Chicken Mole Poblano",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "2 tbsp", "name": "chili powder"},
+   {"qty": "2 tbsp", "name": "peanut butter"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Boil the chicken until cooked and shred it.",
+   "Blend tomato sauce, chili powder, peanut butter, and garlic to make a mole sauce.",
+   "Simmer the chicken in the sauce for 15 minutes."
+  ]
+ },
+ {
+  "name": "Shakshuka",
+  "time": 20,
+  "ingredients": [
+   {"qty": "3", "name": "egg"},
+   {"qty": "1 can", "name": "tomato"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Sauté onion and bell pepper in a pan.",
+   "Add canned tomatoes and simmer to make a thick sauce.",
+   "Make small wells in the sauce and crack the eggs into them. Cover and cook until eggs are set."
+  ]
+ },
+ {
+  "name": "Eggs Benedict",
+  "time": 20,
+  "ingredients": [
+   {"qty": "2", "name": "egg"},
+   {"qty": "1", "name": "bread"},
+   {"qty": "100 g", "name": "ham"},
+   {"qty": "1/2 cup", "name": "butter"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Poach the eggs in simmering water.",
+   "Toast the bread and top with ham.",
+   "Place the poached egg on top and drizzle with a lemon-butter sauce."
+  ]
+ },
+ {
+  "name": "Avocado Toast",
+  "time": 10,
+  "ingredients": [
+   {"qty": "1", "name": "avocado"},
+   {"qty": "2 slices", "name": "bread"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Toast the bread.",
+   "Mash the avocado with lemon juice, salt, and pepper.",
+   "Spread on the toast and top with a fried egg."
+  ]
+ },
+ {
+  "name": "Chilaquiles",
+  "time": 20,
+  "ingredients": [
+   {"qty": "1 bag", "name": "tortilla"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Fry the tortilla chips until crispy.",
+   "Simmer the tomato sauce and pour over the chips.",
+   "Top with fried eggs and cheese."
+  ]
+ },
+ {
+  "name": "Crab Cakes",
+  "time": 20,
+  "ingredients": [
+   {"qty": "1 can", "name": "crab meat"},
+   {"qty": "1 cup", "name": "bread crumbs"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Mix crab meat, bread crumbs, and egg to form patties.",
+   "Pan-fry in oil until golden brown on both sides.",
+   "Serve with a squeeze of lemon."
+  ]
+ },
+ {
+  "name": "Lobster Roll",
+  "time": 15,
+  "ingredients": [
+   {"qty": "300 g", "name": "lobster"},
+   {"qty": "2 pieces", "name": "bread"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "2 tbsp", "name": "cream"}
+  ],
+  "steps": [
+   "Cook the lobster meat and chop it into chunks.",
+   "Mix with cream and butter.",
+   "Stuff the mixture into a toasted bread roll."
+  ]
+ },
+ {
+  "name": "Lobster Bisque",
+  "time": 40,
+  "ingredients": [
+   {"qty": "300 g", "name": "lobster"},
+   {"qty": "1 cup", "name": "cream"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Sauté onion in butter, then add the lobster and water.",
+   "Simmer for 20 minutes, then blend until smooth.",
+   "Stir in the cream and heat through."
+  ]
+ },
+ {
+  "name": "Fried Green Tomatoes",
+  "time": 15,
+  "ingredients": [
+   {"qty": "2", "name": "tomato"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Slice the tomatoes and dip in egg, then flour.",
+   "Deep fry in hot oil until golden brown.",
+   "Season with salt and serve."
+  ]
+ },
+ {
+  "name": "Cornbread",
+  "time": 30,
+  "ingredients": [
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "1 cup", "name": "corn"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Mix flour, cornmeal (or blended corn), milk, and egg.",
+   "Pour into a buttered baking pan.",
+   "Bake at 200°C for 20 minutes until golden."
+  ]
+ },
+ {
+  "name": "Pulled Chicken Sandwich",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "2 pieces", "name": "bread"},
+   {"qty": "1 cup", "name": "tomato sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "1/2 cup", "name": "cabbage"}
+  ],
+  "steps": [
+   "Boil and shred the chicken.",
+   "Mix tomato sauce, sugar, and the chicken in a pan and simmer.",
+   "Serve on buns topped with shredded cabbage."
+  ]
+ },
+ {
+  "name": "Pork Chops with Mushroom Gravy",
+  "time": 25,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "1 cup sliced", "name": "mushroom"},
+   {"qty": "1/2 cup", "name": "milk"},
+   {"qty": "2 tbsp", "name": "flour"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Pan-fry the pork chops until cooked, then set aside.",
+   "In the same pan, sauté mushrooms in butter and sprinkle with flour.",
+   "Stir in the milk to make a gravy, then return the pork chops to the pan."
+  ]
+ },
+ {
+  "name": "Chicken Fried Steak",
+  "time": 30,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "1", "name": "egg"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Pound the beef flat. Dip in egg and coat with flour.",
+   "Pan-fry in oil until golden brown.",
+   "Make a white gravy using milk and flour, and pour over the steak."
+  ]
+ },
+ {
+  "name": "Chicken and Dumplings",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1 cup", "name": "flour"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil chicken with onion in water to make a broth.",
+   "Mix flour and milk into a dough and drop spoonfuls into the boiling broth.",
+   "Simmer until the dumplings are cooked and the broth thickens."
+  ]
+ },
+ {
+  "name": "Maja Blanca",
+  "time": 30,
+  "ingredients": [
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "1 cup", "name": "corn"},
+   {"qty": "1/2 cup", "name": "sugar"},
+   {"qty": "1/2 cup", "name": "cornstarch"}
+  ],
+  "steps": [
+   "Mix all ingredients in a pot.",
+   "Stir constantly over medium heat until the mixture thickens.",
+   "Pour into a mold and let it cool and set before serving."
+  ]
+ },
+ {
+  "name": "Sapin-sapin",
+  "time": 40,
+  "ingredients": [
+   {"qty": "1 cup", "name": "rice flour"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "1/2 cup", "name": "sugar"},
+   {"qty": "1 cup", "name": "coconut meat"}
+  ],
+  "steps": [
+   "Mix rice flour, coconut milk, and sugar into a batter.",
+   "Divide the batter into layers and color them separately if desired.",
+   "Steam each layer one by one until fully cooked and set."
+  ]
+ },
+ {
+  "name": "Buko Pandan",
+  "time": 15,
+  "ingredients": [
+   {"qty": "2 cups", "name": "coconut meat"},
+   {"qty": "1 cup", "name": "cream"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1/2 cup", "name": "sugar"}
+  ],
+  "steps": [
+   "Mix the coconut meat, cream, milk, and sugar in a bowl.",
+   "Chill in the refrigerator for at least an hour.",
+   "Serve cold as a dessert."
+  ]
+ },
+ {
+  "name": "Cassava Cake",
+  "time": 50,
+  "ingredients": [
+   {"qty": "2 cups", "name": "cassava"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "1/2 cup", "name": "sugar"},
+   {"qty": "2", "name": "egg"}
+  ],
+  "steps": [
+   "Grate the cassava and mix with coconut milk, sugar, and eggs.",
+   "Pour into a baking dish.",
+   "Bake at 180°C for 45 minutes until set and golden."
+  ]
+ },
+ {
+  "name": "Ube Halaya",
+  "time": 35,
+  "ingredients": [
+   {"qty": "2 cups", "name": "ube"},
+   {"qty": "1 can", "name": "coconut milk"},
+   {"qty": "1 cup", "name": "sugar"},
+   {"qty": "2 tbsp", "name": "butter"}
+  ],
+  "steps": [
+   "Boil and mash the ube (purple yam).",
+   "In a pot, mix the mashed ube, coconut milk, sugar, and butter.",
+   "Stir constantly over low heat until thick and smooth."
+  ]
+ },
+ {
+  "name": "Pichi-pichi",
+  "time": 30,
+  "ingredients": [
+   {"qty": "2 cups", "name": "cassava"},
+   {"qty": "1 cup", "name": "sugar"},
+   {"qty": "1 cup", "name": "coconut meat"}
+  ],
+  "steps": [
+   "Mix grated cassava with sugar and water to form small balls.",
+   "Steam for 20 minutes until translucent.",
+   "Roll in grated coconut before serving."
+  ]
+ },
+ {
+  "name": "Buko Pie",
+  "time": 45,
+  "ingredients": [
+   {"qty": "2 cups", "name": "coconut meat"},
+   {"qty": "1 cup", "name": "milk"},
+   {"qty": "1/2 cup", "name": "sugar"},
+   {"qty": "1", "name": "flour"}
+  ],
+  "steps": [
+   "Make a pie crust using flour and butter, and press into a pan.",
+   "Fill with a mixture of coconut meat, milk, and sugar.",
+   "Cover with another layer of crust and bake at 180°C for 30 minutes."
+  ]
+ },
+ {
+  "name": "Ensaymada",
+  "time": 40,
+  "ingredients": [
+   {"qty": "2 cups", "name": "flour"},
+   {"qty": "1/2 cup", "name": "milk"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1/2 cup", "name": "sugar"},
+   {"qty": "1/2 cup", "name": "cheese"}
+  ],
+  "steps": [
+   "Make a soft dough with flour, milk, eggs, and sugar.",
+   "Shape into spirals and bake until golden.",
+   "Top with butter and grated cheese."
+  ]
+ },
+ {
+  "name": "Pan de Sal",
+  "time": 30,
+  "ingredients": [
+   {"qty": "2 cups", "name": "flour"},
+   {"qty": "1/2 cup", "name": "milk"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "1 cup", "name": "bread crumbs"}
+  ],
+  "steps": [
+   "Mix flour, milk, sugar, and butter into a dough.",
+   "Shape into small rolls and coat with bread crumbs.",
+   "Bake at 180°C for 15-20 minutes until golden."
+  ]
+ },
+ {
+  "name": "Beef Salpicao",
+  "time": 20,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "butter"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Sear the beef cubes in a hot pan with butter.",
+   "Add lots of minced garlic and soy sauce.",
+   "Cook until the beef is tender, then finish with a squeeze of lemon."
+  ]
+ },
+ {
+  "name": "Adobong Dilaw (Yellow Adobo)",
+  "time": 35,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1/4 cup", "name": "vinegar"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "1 thumb", "name": "turmeric"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, ginger, and turmeric.",
+   "Add the chicken and cook until browned.",
+   "Pour in vinegar and soy sauce, and simmer until the chicken is tender."
+  ]
+ },
+ {
+  "name": "Asadong Manok (Chicken Asado)",
+  "time": 40,
+  "ingredients": [
+   {"qty": "400 g", "name": "chicken"},
+   {"qty": "1/4 cup", "name": "soy sauce"},
+   {"qty": "2 tbsp", "name": "sugar"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic and onion, then add the chicken and cook until browned.",
+   "Add soy sauce and sugar.",
+   "Simmer until the chicken is cooked and the sauce is thick."
+  ]
+ },
+ {
+  "name": "Sinigang na Corned Beef",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1 can", "name": "corned beef"},
+   {"qty": "1 pack", "name": "tamarind mix"},
+   {"qty": "1", "name": "radish"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Boil water with onion and radish.",
+   "Add the tamarind mix.",
+   "Add the corned beef and simmer for 10 minutes. Serve hot."
+  ]
+ },
+ {
+  "name": "Goto (Beef Tripe Porridge)",
+  "time": 45,
+  "ingredients": [
+   {"qty": "400 g", "name": "beef"},
+   {"qty": "1 cup uncooked", "name": "rice"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "4 cups", "name": "water"}
+  ],
+  "steps": [
+   "Simmer beef tripe (or beef chunks) with ginger and garlic until tender.",
+   "Add the rice and water, and simmer until the rice breaks down into a porridge.",
+   "Season with salt and top with fried garlic."
+  ]
+ },
+ {
+  "name": "Pinaputok na Tilapia",
+  "time": 30,
+  "ingredients": [
+   {"qty": "1", "name": "fish"},
+   {"qty": "1", "name": "tomato"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1 thumb", "name": "ginger"},
+   {"qty": "1", "name": "lemon"}
+  ],
+  "steps": [
+   "Stuff the tilapia with chopped tomato, onion, and ginger.",
+   "Wrap in banana leaves or foil.",
+   "Grill or bake for 20 minutes, then serve with lemon."
+  ]
+ },
+ {
+  "name": "Inihaw na Bangus",
+  "time": 25,
+  "ingredients": [
+   {"qty": "1", "name": "fish"},
+   {"qty": "1", "name": "tomato"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "1/4 cup", "name": "vinegar"}
+  ],
+  "steps": [
+   "Clean the bangus and stuff with chopped tomato and onion.",
+   "Grill over hot coals for 10 minutes per side.",
+   "Serve with a vinegar dipping sauce."
+  ]
+ },
+ {
+  "name": "Daing na Bangus",
+  "time": 20,
+  "ingredients": [
+   {"qty": "1", "name": "fish"},
+   {"qty": "1/2 cup", "name": "vinegar"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "2 cups", "name": "oil"}
+  ],
+  "steps": [
+   "Marinate the butterflied bangus in vinegar and garlic for 10 minutes.",
+   "Pan-fry in hot oil until crispy and golden.",
+   "Serve with garlic fried rice and eggs."
+  ]
+ },
+ {
+  "name": "Tortang Giniling",
+  "time": 15,
+  "ingredients": [
+   {"qty": "400 g", "name": "pork"},
+   {"qty": "2", "name": "egg"},
+   {"qty": "1", "name": "potato"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "oil"}
+  ],
+  "steps": [
+   "Sauté onion, potato, and ground pork until cooked.",
+   "Beat the eggs and mix with the cooked meat.",
+   "Fry the mixture in oil until golden brown on both sides."
+  ]
+ },
+ {
+  "name": "Ginisang Togue",
+  "time": 15,
+  "ingredients": [
+   {"qty": "2 cups", "name": "bean sprouts"},
+   {"qty": "1 cup", "name": "tofu"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "2 tbsp", "name": "soy sauce"},
+   {"qty": "4 cloves", "name": "garlic"}
+  ],
+  "steps": [
+   "Sauté garlic and onion, then add the tofu and carrots.",
+   "Add the bean sprouts and soy sauce.",
+   "Stir-fry for 3 minutes until the sprouts are slightly tender."
+  ]
+ },
+ {
+  "name": "Ginisang Pechay",
+  "time": 15,
+  "ingredients": [
+   {"qty": "1 bunch", "name": "pechay"},
+   {"qty": "200 g", "name": "pork"},
+   {"qty": "4 cloves", "name": "garlic"},
+   {"qty": "1", "name": "onion"},
+   {"qty": "2 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Sauté garlic, onion, and ground pork.",
+   "Add the pechay stalks and cook for 2 minutes.",
+   "Add the leaves and soy sauce, and cook until wilted."
+  ]
+ },
+ {
+  "name": "Chopsuey",
+  "time": 20,
+  "ingredients": [
+   {"qty": "1 cup shredded", "name": "cabbage"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1", "name": "bell pepper"},
+   {"qty": "1 cup sliced", "name": "mushroom"},
+   {"qty": "3 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Sauté garlic and onion.",
+   "Add all the vegetables and stir-fry for 5 minutes.",
+   "Add soy sauce and a little water, and cook until tender-crisp."
+  ]
+ },
+ {
+  "name": "Sotanghon Guisado",
+  "time": 20,
+  "ingredients": [
+   {"qty": "200 g", "name": "noodles"},
+   {"qty": "200 g", "name": "chicken"},
+   {"qty": "1", "name": "carrot"},
+   {"qty": "1 cup shredded", "name": "cabbage"},
+   {"qty": "3 tbsp", "name": "soy sauce"}
+  ],
+  "steps": [
+   "Soak the glass noodles in water until soft.",
+   "Stir-fry chicken, carrots, and cabbage.",
+   "Add the noodles and soy sauce, and toss until well mixed."
+  ]
  }
 ]

@@ -1,5 +1,5 @@
 :root {
-  --bg: #d6cca4;
+  --bg: #f7f6f2;
   --text-dark: #2a2321;
   --text-muted: #6b6663;
   --orange: #c4462e;
@@ -13,13 +13,11 @@
 html, body { height: 100%; background-color: var(--bg); color: var(--text-dark); font-family: "Bricolage Grotesque", sans-serif; line-height: 1.5; }
 .hidden { display: none !important; }
 
-/* --- Navigation Bar --- */
 .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background-color: var(--bg); }
 .logo { display: flex; align-items: center; gap: 12px; }
 .logo-circle { background-color: var(--green); color: white; width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.2rem; }
 .logo-text { font-weight: 700; font-size: 1.2rem; letter-spacing: 0.05em; }
 
-/* --- Hero Section --- */
 .hero { padding: 80px 40px; max-width: 800px; }
 .hero h1 { font-family: "Playfair Display", serif; font-size: 4.5rem; font-weight: 700; line-height: 1.1; margin-bottom: 24px; color: var(--text-dark); }
 .hero p { color: var(--text-muted); font-size: 1.15rem; margin-bottom: 32px; max-width: 500px; }
@@ -28,7 +26,6 @@ html, body { height: 100%; background-color: var(--bg); color: var(--text-dark);
 .cta-button.outline { background: transparent; border: 1px solid var(--border); color: var(--text-dark); }
 .cta-button.outline:hover { background: var(--border); }
 
-/* --- Browse View --- */
 #browse-view { padding: 40px; max-width: 1200px; margin: 0 auto; }
 .browse-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
 .browse-header h2 { font-family: "Playfair Display", serif; font-size: 2.5rem; }
@@ -42,7 +39,6 @@ html, body { height: 100%; background-color: var(--bg); color: var(--text-dark);
 .preview-list li:last-child { border-bottom: none; }
 .grid-card .link { align-self: flex-start; margin-top: auto; background: none; border: 0; color: var(--orange); font-weight: 600; text-decoration: underline; cursor: pointer; font-size: 0.95rem; }
 
-/* --- Chat Widget --- */
 .chat-widget { position: fixed; bottom: 30px; right: 30px; width: 380px; background: var(--chat-bg); border-radius: 16px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08); overflow: hidden; display: flex; flex-direction: column; border: 1px solid var(--border); z-index: 1000; }
 .chat-header { background-color: var(--green); color: white; padding: 16px 20px; display: flex; align-items: center; gap: 12px; }
 .chat-title { font-weight: 700; font-size: 1.1rem; letter-spacing: 0.05em; }
@@ -61,7 +57,6 @@ html, body { height: 100%; background-color: var(--bg); color: var(--text-dark);
 .composer input { width: 100%; font-family: inherit; padding: 12px 18px; border: 1px solid var(--border); border-radius: 24px; background: var(--chat-bg); font-size: 0.95rem; outline: none; transition: border-color 0.2s; }
 .composer input:focus { border-color: var(--green); }
 
-/* Recipe Cards inside Chat */
 .card { border: 1px solid var(--border); border-left: 4px solid var(--orange); border-radius: 8px; padding: 12px 14px; margin-top: 12px; background: #fbfdfb; box-shadow: 0 2px 8px rgba(0,0,0,0.02); }
 .card h3 { margin: 0 0 4px 0; font-size: 1.05rem; }
 .card h4 { margin: 12px 0 4px; font-size: 0.9rem; color: var(--green); }
@@ -71,7 +66,6 @@ html, body { height: 100%; background-color: var(--bg); color: var(--text-dark);
 .miss { color: var(--orange); margin: 2px 0 0; font-size: 0.85rem; }
 button.link { margin-top: 10px; background: none; border: 0; padding: 0; color: var(--green); font: inherit; font-size: 0.85rem; font-weight: 600; text-decoration: underline; cursor: pointer; }
 
-/* --- Toast Notifications (Bottom Left) --- */
 .toast-container { position: fixed; bottom: 30px; left: 30px; display: flex; flex-direction: column-reverse; gap: 10px; z-index: 9999; pointer-events: none; max-height: 80vh; }
 .toast { background: var(--green); color: white; padding: 14px 20px; border-radius: 10px; box-shadow: 0 10px 30px rgba(46, 107, 83, 0.3); display: flex; align-items: center; gap: 12px; cursor: pointer; pointer-events: auto; opacity: 0; transform: translateX(-150%); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease, background-color 0.2s; }
 .toast.show { opacity: 1; transform: translateX(0); }
@@ -82,7 +76,6 @@ button.link { margin-top: 10px; background: none; border: 0; padding: 0; color: 
 .toast-text strong { font-size: 0.95rem; font-weight: 600; }
 .toast-action { font-size: 0.8rem; opacity: 0.9; text-decoration: underline; margin-top: 2px; }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .navbar { padding: 16px 20px; }
   .hero { padding: 40px 20px; }

@@ -9,8 +9,8 @@ from pathlib import Path
 
 BASE = Path(os.path.abspath(__file__)).parent
 RECIPES = json.loads((BASE / "database.json").read_text(encoding="utf-8"))
-PANTRY = {"salt", "pepper", "oil", "water", "sugar"} 
-MEAT = {"chicken", "pork", "beef", "shrimp", "tuna", "bacon", "sausage", "ham", "fish", "salmon", "squid", "oyster"}
+PANTRY = {"salt", "pepper", "oil", "water", "sugar"}
+MEAT = {"chicken", "pork", "beef", "shrimp", "tuna", "bacon", "sausage", "ham", "fish", "salmon", "squid", "oyster", "bangus", "tilapia", "corned"}
 DAIRY_EGG = {"egg", "cheese", "milk", "butter", "cream", "honey"}
 
 HELP = ('Hi! Tell me what is in your kitchen. '
@@ -33,19 +33,15 @@ for r in RECIPES:
         ing["_key"] = tokens(ing["name"])[0]
         KEYNAME.setdefault(ing["_key"], ing["name"])
 
-# --- NEW: Automatically tag flavors based on ingredients ---
 for r in RECIPES:
     keys = {i["_key"] for i in r["ingredients"]}
     r["_vegetarian"] = not keys & MEAT
     r["_vegan"] = r["_vegetarian"] and not keys & DAIRY_EGG
-    
-    # Flavor Tagging
     r["_spicy"] = bool(keys & {"chili", "cayenne", "sriracha", "paprika", "jalapeno", "pepper"})
     r["_savory"] = bool(keys & {"soy", "oyster", "shrimp", "fish", "cheese", "mushroom", "bacon"})
     r["_sour"] = bool(keys & {"vinegar", "lemon", "calamansi", "tamarind", "tomato"})
     r["_creamy"] = bool(keys & {"cream", "milk", "coconut", "cheese", "butter"})
     r["_sweet"] = bool(keys & {"sugar", "honey", "banana", "mango", "pineapple", "apple"})
-# -----------------------------------------------------------
 
 VOCAB = {i["_key"] for r in RECIPES for i in r["ingredients"]} - PANTRY
 
@@ -89,7 +85,6 @@ def reply_to(message):
     if not toks or (words & {"hi", "hello", "hey", "help"} and not have):
         return {"reply": HELP}
 
-    # 1. the name of Recipe
     for r in RECIPES:
         distinct = {w for w in r["_name_words"] if w not in VOCAB and len(w) > 3}
         full = r["_name_words"] <= words
@@ -97,15 +92,12 @@ def reply_to(message):
             return {"reply": f"Here is how to make {r['name']}:", "recipes": [card(r)], "full": True}
 
     pool, filters = RECIPES, []
-    
-    # 2. Diet filters
     for diet in ("vegan", "vegetarian"):    
         if diet in words:
             pool = [r for r in pool if r["_" + diet]]
             filters.append(diet)
             break
 
-    # --- NEW: Flavor Filters ---
     if words & {"spicy", "hot", "kick", "spice"}:
         pool = [r for r in pool if r["_spicy"]]
         filters.append("spicy")
@@ -121,7 +113,6 @@ def reply_to(message):
     if words & {"sweet"}:
         pool = [r for r in pool if r["_sweet"]]
         filters.append("sweet")
-    # ---------------------------
 
     m = re.search(r"(\d+)\s*(?:min|minute)", message.lower())
     limit = int(m.group(1)) if m else (30 if words & {"quick", "fast"} else None)
@@ -129,11 +120,9 @@ def reply_to(message):
         pool = [r for r in pool if r["time"] <= limit]
         filters.append(f"under {limit} minutes")
 
-    # 3. Surprise me
     if words & {"surprise", "random"} and pool:
         return {"reply": "How about this one?", "recipes": [card(random.choice(pool))], "full": True}
 
-    # 4. Search by ingredients
     if have:
         ready, close = find_by_ingredients(have, pool)
         if ready or close:
@@ -150,7 +139,6 @@ def reply_to(message):
             return {"reply": msg, "recipes": [card(r, have) for r in ready + close]}
         return {"reply": "None of my recipes match those yet. Try adding another ingredient or changing the flavor."}
 
-    # 5. Browse by filter only
     if filters:
         if not pool:
             return {"reply": "No recipes match that combination. Try removing a filter."}
