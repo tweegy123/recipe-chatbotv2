@@ -14,8 +14,7 @@ MEAT = {"chicken", "pork", "beef", "shrimp", "tuna", "bacon", "sausage", "ham", 
 DAIRY_EGG = {"egg", "cheese", "milk", "butter", "cream", "honey"}
 
 HELP = ('Hi! Tell me what is in your kitchen. '
-        'You can also ask for a recipe by name, try "quick vegetarian meals", ask for a flavor like "spicy" or "creamy", or just say "surprise me". '
-        'I assume you always have salt, pepper, oil, water and sugar.')
+        'You can ask for a recipe by name, try "quick vegetarian meals", ask for a flavor like "spicy" or "creamy", or just say "surprise me".')
 
 def norm(word):
     if word.endswith("ies"): return word[:-3] + "y"
@@ -45,9 +44,37 @@ for r in RECIPES:
 
 VOCAB = {i["_key"] for r in RECIPES for i in r["ingredients"]} - PANTRY
 
+def get_tools(r):
+    text = (r["name"] + " " + " ".join(r["steps"])).lower()
+    tools = set(["Knife & Chopping Board"])
+    
+    if any(w in text for w in ["boil", "simmer", "soup", "broth", "stew", "porridge", "congee", "blanch"]):
+        tools.add("Pot / Saucepan")
+    if any(w in text for w in ["fry", "stir-fry", "sear", "sauté", "pan-fry", "omelette", "scramble"]):
+        tools.add("Frying Pan / Skillet")
+    if any(w in text for w in ["bake", "roast", "oven"]):
+        tools.add("Baking Sheet / Oven")
+    if "steam" in text:
+        tools.add("Steamer")
+    if any(w in text for w in ["blend", "smoothie", "puree"]):
+        tools.add("Blender")
+    if any(w in text for w in ["mix", "whisk", "batter", "dough"]):
+        tools.add("Mixing Bowl & Whisk")
+    if any(w in text for w in ["grill", "bbq", "char"]):
+        tools.add("Grill Pan / BBQ")
+    
+    if len(tools) == 1:
+        tools.add("Frying Pan / Skillet")
+    return sorted(list(tools))
+
 def card(r, have=None):
-    data = {"name": r["name"], "time": r["time"],
-            "ingredients": [f'{i["qty"]} {i["name"]}' for i in r["ingredients"]], "steps": r["steps"]}
+    data = {
+        "name": r["name"], 
+        "time": r["time"],
+        "ingredients": [f'{i["qty"]} {i["name"]}' for i in r["ingredients"]], 
+        "steps": r["steps"],
+        "tools": get_tools(r)
+    }
     if have is not None:
         needed = [i for i in r["ingredients"] if i["_key"] not in PANTRY]
         data["have"] = [i["name"] for i in needed if i["_key"] in have]
@@ -64,9 +91,7 @@ def find_by_ingredients(have, pool):
             (ready if missing == 0 else close).append((-hits, missing, r["time"], r))
     ready.sort(key=lambda t: t[:3])
     close.sort(key=lambda t: t[:3])
-    ready = [t[3] for t in ready]
-    close = [t[3] for t in close]
-    return ready, close
+    return [t[3] for t in ready], [t[3] for t in close]
 
 def reply_to(message):
     toks = tokens(message)
