@@ -31,7 +31,7 @@
   ]
  },
  {
-  "name": "Sinigang na Pork",
+  "name": "Pork Sinigang",
   "time": 60,
   "ingredients": [
    { 
@@ -10119,34 +10119,6 @@
    "Dip the chicken in beaten egg, then coat generously with flour.",
    "Heat oil in a deep pan and fry the chicken until golden brown and cooked through (about 10-15 minutes).",
    "Drain on paper towels and serve."
-  ]
- },
- {
-  "name": "Sunny Side Up Egg",
-  "time": 5,
-  "ingredients": [
-   {
-    "qty": "2",
-    "name": "egg"
-   },
-   {
-    "qty": "2 tbsp",
-    "name": "oil"
-   },
-   {
-    "qty": "to taste",
-    "name": "salt"
-   },
-   {
-    "qty": "to taste",
-    "name": "pepper"
-   }
-  ],
-  "steps": [
-   "Heat oil in a non-stick pan over medium-low heat.",
-   "Crack the eggs gently into the pan.",
-   "Cover and cook until the whites are set but the yolk is still runny (about 3-4 minutes).",
-   "Season with salt and pepper and serve immediately."
   ]
  },
  {
