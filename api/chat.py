@@ -14,7 +14,6 @@ PANTRY = {"salt", "pepper", "oil", "water", "sugar"}
 MEAT = {"chicken", "pork", "beef", "shrimp", "tuna", "bacon", "sausage", "ham", "fish", "salmon", "squid", "oyster", "bangus", "tilapia", "corned"}
 DAIRY_EGG = {"egg", "cheese", "milk", "butter", "cream", "honey"}
 
-# Added categories so the spellchecker ignores them
 CATEGORY_WORDS = {"breakfast", "lunch", "dinner", "snack", "dessert", "spicy", "sweet", "savory", "sour", "creamy", "vegan", "vegetarian"}
 
 HELP = ('Hi! Tell me what is in your kitchen. '
@@ -97,7 +96,6 @@ def reply_to(message):
     for w in words:
         if w in ALL_INGREDIENTS:
             have.add(w)
-        # FIX: Ignore category words so they don't get auto-corrected to ingredients
         elif w not in CATEGORY_WORDS: 
             matches = difflib.get_close_matches(w, ALL_INGREDIENTS, n=1, cutoff=0.75)
             if matches: have.add(matches[0])
@@ -133,22 +131,30 @@ def reply_to(message):
     
     category_found = False
     if "breakfast" in words:
-        b_keys = {"egg", "bread", "milk", "bacon", "sausage", "banana", "oats"}
-        pool = [r for r in pool if any(i["_key"] in b_keys for i in r["ingredients"]) and r["time"] <= 30]
+        bf_names = {"pancake", "omelette", "silog", "tapsilog", "longsilog", "toast", "waffle", "oatmeal", "congee", "arroz"}
+        bf_ings = {"egg", "bread", "oats"} 
+        pool = [r for r in pool if any(w in r["name"].lower() for w in bf_names) or (any(i["_key"] in bf_ings for i in r["ingredients"]) and r["time"] <= 30)]
         filters.append("breakfast")
         category_found = True
+        
     elif "snack" in words:
-        s_keys = {"bread", "tortilla", "potato", "banana", "flour", "cheese"}
-        pool = [r for r in pool if any(i["_key"] in s_keys for i in r["ingredients"])]
+        snack_names = {"lumpia", "turon", "quesadilla", "sandwich", "hash", "nachos", "smoothie", "spring", "fries"}
+        snack_ings = {"tortilla", "cheese", "potato", "wrapper", "bread"}
+        pool = [r for r in pool if any(w in r["name"].lower() for w in snack_names) or any(i["_key"] in snack_ings for i in r["ingredients"])]
         filters.append("snacks")
         category_found = True
+        
     elif "dessert" in words:
-        d_keys = {"sugar", "honey", "banana", "mango", "avocado", "strawberry", "pineapple", "milk"}
-        pool = [r for r in pool if r["_sweet"] or any(i["_key"] in d_keys for i in r["ingredients"])]
+        d_names = {"cake", "flan", "maja", "turon", "halo", "biko", "palitaw", "taho", "buko", "pie", "leche", "pandan", "halaya", "pichi", "ensaymada", "sapin", "smoothie"}
+        d_ings = {"condensed", "vanilla", "chocolate", "strawberry", "blueberry"}
+        pool = [r for r in pool if any(w in r["name"].lower() for w in d_names) or any(i["_key"] in d_ings for i in r["ingredients"])]
         filters.append("dessert")
         category_found = True
+        
     elif "lunch" in words or "dinner" in words:
-        pool = [r for r in pool if r["_savory"] or any(i["_key"] in ["rice", "pasta", "noodles"] for i in r["ingredients"])]
+        main_names = {"adobo", "sinigang", "curry", "stir-fry", "roast", "fried rice", "spaghetti", "soup", "stew", "caldereta", "menudo", "afritada", "tinola", "kare-kare", "sisig", "bulalo", "pares", "bistek", "nilaga", "pochero", "humba", "kansi", "paksiw", "bicol", "laing", "pinakbet", "batchoy", "mami", "lomi", "sotanghon", "bihon", "canton", "palabok", "malabon", "ribs", "wellington", "bourguignon", "coq", "steak", "chop", "katsu", "teriyaki", "taco", "burrito", "lasagna", "risotto", "paella", "salpicao", "inasal"}
+        main_ings = {"rice", "pasta", "noodles", "pork", "beef", "chicken", "fish", "shrimp"}
+        pool = [r for r in pool if any(w in r["name"].lower() for w in main_names) or (any(i["_key"] in main_ings for i in r["ingredients"]) and r["time"] >= 20)]
         filters.append("main dishes")
         category_found = True
 
@@ -184,7 +190,6 @@ def reply_to(message):
     if words & {"surprise", "random"} and pool:
         return {"reply": "How about this one?", "recipes": [card(random.choice(pool))], "full": True}
 
-    # Check if we ONLY have a category/filter and no ingredients
     if have:
         ready, almost = find_by_ingredients(have, pool)
         combined = ready + almost
@@ -212,7 +217,6 @@ def reply_to(message):
             
         return {"reply": "I don't have any recipes with those ingredients. Try adding something else!"}
 
-    # If they typed a category but NO ingredients
     if filters:
         if not pool:
             return {"reply": "No recipes match that combination. Try removing a filter."}
