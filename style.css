@@ -8,11 +8,7 @@
   --border-color: #e0e6df;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
   background-color: var(--bg-body);
@@ -24,9 +20,7 @@ body {
   overflow: hidden;
 }
 
-.hidden {
-  display: none !important;
-}
+.hidden { display: none !important; }
 
 /* --- The App Window --- */
 .app-window {
@@ -36,7 +30,7 @@ body {
   max-height: 750px;
   background: var(--bg-app);
   border-radius: 24px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.1);
   display: flex;
   overflow: hidden;
   position: relative;
@@ -136,34 +130,6 @@ body {
   background: var(--bg-app);
 }
 
-/* Window Dots (Top Right) */
-.window-dots {
-  position: absolute;
-  top: 24px;
-  right: 30px;
-  display: flex;
-  gap: 8px;
-  z-index: 10;
-}
-
-.dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.dot.red {
-  background: #ff5f56;
-}
-
-.dot.yellow {
-  background: #ffbd2e;
-}
-
-.dot.green {
-  background: #27c93f;
-}
-
 /* Background Waves */
 .bg-wave {
   position: absolute;
@@ -201,14 +167,8 @@ body {
   z-index: 1;
 }
 
-.chat-container::-webkit-scrollbar {
-  width: 6px;
-}
-
-.chat-container::-webkit-scrollbar-thumb {
-  background: var(--border-color);
-  border-radius: 10px;
-}
+.chat-container::-webkit-scrollbar { width: 6px; }
+.chat-container::-webkit-scrollbar-thumb { background: var(--border-color); border-radius: 10px; }
 
 /* Bot Message */
 .msg-row {
@@ -229,12 +189,7 @@ body {
   border: 2px solid var(--border-color);
   flex-shrink: 0;
 }
-
-.bot-avatar svg {
-  width: 28px;
-  height: 28px;
-  fill: #4a8b46;
-}
+.bot-avatar svg { width: 28px; height: 28px; fill: #4a8b46; }
 
 .msg-bubble {
   background: var(--light-green);
@@ -244,7 +199,7 @@ body {
   color: var(--text-dark);
   font-size: 0.95rem;
   line-height: 1.5;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
 }
 
 /* User Message */
@@ -252,7 +207,6 @@ body {
   align-self: flex-end;
   flex-direction: row-reverse;
 }
-
 .msg-row.user .msg-bubble {
   background: var(--primary-green);
   color: white;
@@ -270,36 +224,10 @@ body {
   margin-top: 12px;
   width: 100%;
 }
-
-.recipe-card h3 {
-  font-size: 1.1rem;
-  color: var(--primary-green);
-  margin-bottom: 4px;
-}
-
-.recipe-card .meta {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 12px;
-}
-
-.recipe-card ul,
-.recipe-card ol {
-  padding-left: 20px;
-  font-size: 0.85rem;
-  color: #444;
-  margin-bottom: 8px;
-}
-
-.recipe-card .tools {
-  font-size: 0.8rem;
-  color: #666;
-  background: #f5f5f5;
-  padding: 6px 10px;
-  border-radius: 6px;
-  margin-bottom: 12px;
-  display: inline-block;
-}
+.recipe-card h3 { font-size: 1.1rem; color: var(--primary-green); margin-bottom: 4px; }
+.recipe-card .meta { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 12px; }
+.recipe-card ul, .recipe-card ol { padding-left: 20px; font-size: 0.85rem; color: #444; margin-bottom: 8px; }
+.recipe-card .tools { font-size: 0.8rem; color: #666; background: #f5f5f5; padding: 6px 10px; border-radius: 6px; margin-bottom: 12px; display: inline-block;}
 
 /* Chips */
 .chips-container {
@@ -309,7 +237,6 @@ body {
   padding: 0 40px 20px;
   z-index: 1;
 }
-
 .chip {
   background: transparent;
   border: 1px solid var(--primary-green);
@@ -322,26 +249,21 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
-
-.chip:hover {
-  background: var(--light-green);
-}
+.chip:hover { background: var(--light-green); }
 
 /* Input Area */
 .input-area {
   padding: 20px 40px 40px;
   z-index: 1;
 }
-
 .input-wrapper {
   display: flex;
   background: white;
   border: 1px solid var(--border-color);
   border-radius: 30px;
   padding: 6px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
-
 .input-wrapper input {
   flex: 1;
   border: none;
@@ -351,11 +273,7 @@ body {
   font-size: 1rem;
   background: transparent;
 }
-
-.input-wrapper input::placeholder {
-  color: #a0a0a0;
-}
-
+.input-wrapper input::placeholder { color: #a0a0a0; }
 .send-btn {
   background: var(--primary-green);
   border: none;
@@ -368,18 +286,8 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
-
-.send-btn:hover {
-  transform: scale(1.05);
-  background: #3d7539;
-}
-
-.send-btn svg {
-  fill: white;
-  width: 20px;
-  height: 20px;
-  margin-left: 2px;
-}
+.send-btn:hover { transform: scale(1.05); background: #3d7539; }
+.send-btn svg { fill: white; width: 20px; height: 20px; margin-left: 2px;}
 
 /* Toast Notification */
 .toast-container {
@@ -392,7 +300,6 @@ body {
   z-index: 9999;
   pointer-events: none;
 }
-
 .toast {
   background: var(--primary-green);
   color: white;
@@ -408,64 +315,18 @@ body {
   transform: translateX(-150%);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s ease;
 }
-
-.toast.show {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.toast:hover {
-  background: #3d7539;
-}
-
-.toast-icon {
-  font-size: 1.4rem;
-}
-
-.toast-text strong {
-  font-size: 0.95rem;
-  display: block;
-}
-
-.toast-action {
-  font-size: 0.8rem;
-  opacity: 0.9;
-  text-decoration: underline;
-}
+.toast.show { opacity: 1; transform: translateX(0); }
+.toast:hover { background: #3d7539; }
+.toast-icon { font-size: 1.4rem; }
+.toast-text strong { font-size: 0.95rem; display: block; }
+.toast-action { font-size: 0.8rem; opacity: 0.9; text-decoration: underline; }
 
 /* Responsive */
 @media (max-width: 800px) {
-  .app-window {
-    flex-direction: column;
-    height: 100vh;
-    border-radius: 0;
-    width: 100vw;
-    max-width: 100%;
-    max-height: 100vh;
-  }
-
-  .sidebar {
-    display: none;
-  }
-
-  .bg-wave,
-  .bg-wave-2 {
-    height: 150px;
-  }
-
-  .chat-container {
-    padding: 30px 20px 10px;
-  }
-
-  .chips-container {
-    padding: 0 20px 10px;
-  }
-
-  .input-area {
-    padding: 10px 20px 20px;
-  }
-
-  .window-dots {
-    display: none;
-  }
+  .app-window { flex-direction: column; height: 100vh; border-radius: 0; width: 100vw; max-width: 100%; max-height: 100vh;}
+  .sidebar { display: none; }
+  .bg-wave, .bg-wave-2 { height: 150px; }
+  .chat-container { padding: 30px 20px 10px; }
+  .chips-container { padding: 0 20px 10px; }
+  .input-area { padding: 10px 20px 20px; }
 }
