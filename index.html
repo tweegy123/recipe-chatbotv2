@@ -46,7 +46,7 @@
 
       <div class="chat-container" id="log"></div>
 
-      <!-- NEW CATEGORY CHIPS -->
+      <!-- Category Chips -->
       <div class="chips-container" id="chips">
         <button class="chip">Breakfast</button>
         <button class="chip">Lunch</button>
@@ -77,8 +77,6 @@
     const navHome = document.getElementById('nav-home');
     const navAll = document.getElementById('nav-all');
 
-    function scrollChat() { log.scrollTop = log.scrollHeight; }
-
     function addMsg(who, text) {
       const row = document.createElement('div');
       row.className = 'msg-row ' + who;
@@ -96,7 +94,10 @@
       
       row.appendChild(bubble);
       log.appendChild(row);
-      scrollChat();
+      
+      // FIXED: Smooth scroll to the new message, but don't jump to the absolute bottom
+      row.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      
       return bubble; 
     }
 
@@ -188,7 +189,6 @@
           if (completeRecipes.length > 0) {
             completeRecipes.slice(0, 3).forEach(name => showToast(`You can cook ${name}!`, name));
           }
-          scrollChat();
         }
 
       } catch (e) {
@@ -227,7 +227,6 @@
         
         if (recipes.length > 0) {
           renderRecipes(bubble, recipes, false);
-          scrollChat();
         }
       } catch (err) {
         log.innerHTML = '';
@@ -252,4 +251,4 @@
     addMsg('bot', "Hi! I'm your Recipe Assistant!\nWhat would you like to cook today?");
   </script>
 </body>
-</html>                                               
+</html>
