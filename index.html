@@ -46,10 +46,13 @@
 
       <div class="chat-container" id="log"></div>
 
-      <!-- Only Quick Meals and Random Recipe remain -->
+      <!-- NEW CATEGORY CHIPS -->
       <div class="chips-container" id="chips">
-        <button class="chip">Quick Meals</button>
-        <button class="chip">Random Recipe</button>
+        <button class="chip">Breakfast</button>
+        <button class="chip">Lunch</button>
+        <button class="chip">Dinner</button>
+        <button class="chip">Snacks</button>
+        <button class="chip">Dessert</button>
       </div>
 
       <div class="input-area" id="input-area">
@@ -83,7 +86,7 @@
       if (who === 'bot') {
         const avatar = document.createElement('div');
         avatar.className = 'bot-avatar';
-        avatar.textContent = 'A'; // Changed to just the letter A
+        avatar.textContent = 'A';
         row.appendChild(avatar);
       }
 

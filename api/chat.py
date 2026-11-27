@@ -98,7 +98,6 @@ def reply_to(message):
             matches = difflib.get_close_matches(w, ALL_INGREDIENTS, n=1, cutoff=0.75)
             if matches: have.add(matches[0])
 
-    # --- NEW: Check for negative constraints (e.g. "no salt", "without pork") ---
     banned = set()
     for i, w in enumerate(toks):
         if w in ("no", "without", "dont", "got") and i + 1 < len(toks):
@@ -109,7 +108,6 @@ def reply_to(message):
                 matches = difflib.get_close_matches(next_w, ALL_INGREDIENTS, n=1, cutoff=0.75)
                 if matches: banned.add(matches[0])
                 
-    # Remove banned items from "have" just in case they typed "I have salt but no salt"
     have -= banned
 
     cue = bool(words & {"recipe", "make", "cook", "how", "show", "give", "want"})
@@ -117,41 +115,65 @@ def reply_to(message):
     if not toks or (words & {"hi", "hello", "hey", "help"} and not have):
         return {"reply": HELP}
 
-    # Filter out banned ingredients from the global recipe pool
     pool = RECIPES
     if banned:
         pool = [r for r in pool if not any(b in {i["_key"] for i in r["ingredients"]} for b in banned)]
 
-    # 1. Search exact recipe name
     for r in pool:
         distinct = {w for w in r["_name_words"] if w not in VOCAB and len(w) > 3}
         full = r["_name_words"] <= words
         if (full and (distinct or cue or not (have - r["_name_words"]))) or (distinct & words and (cue or not have)):
             return {"reply": f"Here is how to make {r['name']}:", "recipes": [card(r)], "full": True}
 
-    # 2. Filters (Diet, Flavor, Time)
     filters = []
-    for diet in ("vegan", "vegetarian"):    
-        if diet in words:
-            pool = [r for r in pool if r["_" + diet]]
-            filters.append(diet)
-            break
+    
+    # --- NEW: Category Filters ---
+    category_found = False
+    if "breakfast" in words:
+        # Breakfast typically has eggs, bread, milk, or quick savory items
+        b_keys = {"egg", "bread", "milk", "bacon", "sausage", "banana", "oats"}
+        pool = [r for r in pool if any(i["_key"] in b_keys for i in r["ingredients"]) and r["time"] <= 30]
+        filters.append("breakfast")
+        category_found = True
+    elif "snack" in words:
+        s_keys = {"bread", "tortilla", "potato", "banana", "flour", "cheese"}
+        pool = [r for r in pool if any(i["_key"] in s_keys for i in r["ingredients"])]
+        filters.append("snacks")
+        category_found = True
+    elif "dessert" in words:
+        d_keys = {"sugar", "honey", "banana", "mango", "avocado", "strawberry", "pineapple", "milk"}
+        pool = [r for r in pool if r["_sweet"] or any(i["_key"] in d_keys for i in r["ingredients"])]
+        filters.append("dessert")
+        category_found = True
+    elif "lunch" in words or "dinner" in words:
+        # Lunch/dinner are usually savory main dishes
+        pool = [r for r in pool if r["_savory"] or any(i["_key"] in ["rice", "pasta", "noodles"] for i in r["ingredients"])]
+        filters.append("main dishes")
+        category_found = True
+    # ------------------------------
 
-    if words & {"spicy", "hot", "kick", "spice"}:
-        pool = [r for r in pool if r["_spicy"]]
-        filters.append("spicy")
-    if words & {"savory", "umami", "salty", "rich"}:
-        pool = [r for r in pool if r["_savory"]]
-        filters.append("savory")
-    if words & {"sour", "tangy", "acidic"}:
-        pool = [r for r in pool if r["_sour"]]
-        filters.append("sour")
-    if words & {"creamy"}:
-        pool = [r for r in pool if r["_creamy"]]
-        filters.append("creamy")
-    if words & {"sweet"}:
-        pool = [r for r in pool if r["_sweet"]]
-        filters.append("sweet")
+    if not category_found:
+        for diet in ("vegan", "vegetarian"):    
+            if diet in words:
+                pool = [r for r in pool if r["_" + diet]]
+                filters.append(diet)
+                break
+
+        if words & {"spicy", "hot", "kick", "spice"}:
+            pool = [r for r in pool if r["_spicy"]]
+            filters.append("spicy")
+        if words & {"savory", "umami", "salty", "rich"}:
+            pool = [r for r in pool if r["_savory"]]
+            filters.append("savory")
+        if words & {"sour", "tangy", "acidic"}:
+            pool = [r for r in pool if r["_sour"]]
+            filters.append("sour")
+        if words & {"creamy"}:
+            pool = [r for r in pool if r["_creamy"]]
+            filters.append("creamy")
+        if words & {"sweet"}:
+            pool = [r for r in pool if r["_sweet"]]
+            filters.append("sweet")
 
     m = re.search(r"(\d+)\s*(?:min|minute)", message.lower())
     limit = int(m.group(1)) if m else (30 if words & {"quick", "fast"} else None)
@@ -159,17 +181,15 @@ def reply_to(message):
         pool = [r for r in pool if r["time"] <= limit]
         filters.append(f"under {limit} minutes")
 
-    # 3. Surprise me
     if words & {"surprise", "random"} and pool:
         return {"reply": "How about this one?", "recipes": [card(random.choice(pool))], "full": True}
 
-    # 4. Search by Ingredients
     if have:
         ready, almost = find_by_ingredients(have, pool)
         combined = ready + almost
         
         if combined:
-            combined = combined[:10] # Limit to 10 to keep UI clean
+            combined = combined[:10]
             
             names = sorted(KEYNAME.get(k, k) for k in have)
             text = ", ".join(names[:-1]) + (" and " if len(names) > 1 else "") + names[-1]
@@ -191,7 +211,6 @@ def reply_to(message):
             
         return {"reply": "I don't have any recipes with those ingredients. Try adding something else!"}
 
-    # 5. Browse by filter only
     if filters:
         if not pool:
             return {"reply": "No recipes match that combination. Try removing a filter."}
