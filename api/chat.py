@@ -69,18 +69,27 @@ def card(r, have=None):
         data["missing"] = [i["name"] for i in needed if i["_key"] not in have]
     return data
 
-# --- UPDATED: Only find recipes where user has EVERYTHING ---
+# --- SMART INGREDIENT SEARCH ---
 def find_by_ingredients(have, pool):
-    ready = []
+    matches = []
     for r in pool:
         needed = [i for i in r["ingredients"] if i["_key"] not in PANTRY]
         hits = sum(i["_key"] in have for i in needed)
-        # If hits == len(needed), it means the user has all required ingredients
-        if hits == len(needed):
-            ready.append(r)
-    ready.sort(key=lambda r: r["time"])
-    return ready
-# -------------------------------------------------------------
+        
+        # If the recipe uses at least one of the user's ingredients
+        if hits > 0:
+            missing = len(needed) - hits
+            # Sort by most hits first, then by least missing, then by time
+            matches.append((-hits, missing, r["time"], r))
+            
+    matches.sort(key=lambda t: t[:3])
+    
+    # Separate into perfectly ready vs almost ready
+    ready = [t[3] for t in matches if t[1] == 0] # missing == 0
+    almost = [t[3] for t in matches if t[1] > 0] # missing > 0
+    
+    return ready, almost
+# -------------------------------
 
 def reply_to(message):
     toks = tokens(message)
@@ -94,19 +103,19 @@ def reply_to(message):
             matches = difflib.get_close_matches(w, VOCAB, n=1, cutoff=0.75)
             if matches: have.add(matches[0])
 
-    cue = bool(words & {"recipe", "make", "cook", "how", "show"})
+    cue = bool(words & {"recipe", "make", "cook", "how", "show", "give", "want"})
 
     if not toks or (words & {"hi", "hello", "hey", "help"} and not have):
         return {"reply": HELP}
 
-    # 1. Search by specific recipe name
+    # 1. Search exact recipe name
     for r in RECIPES:
         distinct = {w for w in r["_name_words"] if w not in VOCAB and len(w) > 3}
         full = r["_name_words"] <= words
         if (full and (distinct or cue or not (have - r["_name_words"]))) or (distinct & words and (cue or not have)):
             return {"reply": f"Here is how to make {r['name']}:", "recipes": [card(r)], "full": True}
 
-    # 2. Diet / Flavor filters
+    # 2. Filters (Diet, Flavor, Time)
     pool, filters = RECIPES, []
     for diet in ("vegan", "vegetarian"):    
         if diet in words:
@@ -140,16 +149,30 @@ def reply_to(message):
     if words & {"surprise", "random"} and pool:
         return {"reply": "How about this one?", "recipes": [card(random.choice(pool))], "full": True}
 
-    # 4. Strict Ingredient Search (Only shows what you can cook right now)
+    # 4. Search by Ingredients
     if have:
-        ready = find_by_ingredients(have, pool)
-        if ready:
+        ready, almost = find_by_ingredients(have, pool)
+        
+        # Combine them (Ready recipes first, then almost ready)
+        combined = ready + almost
+        
+        if combined:
+            # Limit to 10 recipes so the UI doesn't break
+            combined = combined[:10]
+            
             names = sorted(KEYNAME[k] for k in have)
             text = ", ".join(names[:-1]) + (" and " if len(names) > 1 else "") + names[-1]
-            msg = f"With {text}, you can cook these right now:"
-            return {"reply": msg, "recipes": [card(r, have) for r in ready]}
-        
-        return {"reply": "I don't have a recipe that uses only those ingredients. Try adding more ingredients!"}
+            
+            if ready and not almost:
+                msg = f"With {text}, you can cook these right now:"
+            elif ready and almost:
+                msg = f"With {text}, you can cook these right now, plus a few you are close to:"
+            else:
+                msg = f"You don't have all the ingredients for a full recipe yet. But here are some ideas that use {text}:"
+                
+            return {"reply": msg, "recipes": [card(r, have) for r in combined]}
+            
+        return {"reply": "I don't have any recipes with those ingredients. Try adding something else!"}
 
     # 5. Browse by filter only
     if filters:
