@@ -14,6 +14,9 @@ PANTRY = {"salt", "pepper", "oil", "water", "sugar"}
 MEAT = {"chicken", "pork", "beef", "shrimp", "tuna", "bacon", "sausage", "ham", "fish", "salmon", "squid", "oyster", "bangus", "tilapia", "corned"}
 DAIRY_EGG = {"egg", "cheese", "milk", "butter", "cream", "honey"}
 
+# Added categories so the spellchecker ignores them
+CATEGORY_WORDS = {"breakfast", "lunch", "dinner", "snack", "dessert", "spicy", "sweet", "savory", "sour", "creamy", "vegan", "vegetarian"}
+
 HELP = ('Hi! Tell me what is in your kitchen. '
         'You can ask for a recipe by name, try "quick vegetarian meals", ask for a flavor like "spicy" or "creamy", or just say "surprise me".')
 
@@ -94,7 +97,8 @@ def reply_to(message):
     for w in words:
         if w in ALL_INGREDIENTS:
             have.add(w)
-        else:
+        # FIX: Ignore category words so they don't get auto-corrected to ingredients
+        elif w not in CATEGORY_WORDS: 
             matches = difflib.get_close_matches(w, ALL_INGREDIENTS, n=1, cutoff=0.75)
             if matches: have.add(matches[0])
 
@@ -127,10 +131,8 @@ def reply_to(message):
 
     filters = []
     
-    # --- NEW: Category Filters ---
     category_found = False
     if "breakfast" in words:
-        # Breakfast typically has eggs, bread, milk, or quick savory items
         b_keys = {"egg", "bread", "milk", "bacon", "sausage", "banana", "oats"}
         pool = [r for r in pool if any(i["_key"] in b_keys for i in r["ingredients"]) and r["time"] <= 30]
         filters.append("breakfast")
@@ -146,11 +148,9 @@ def reply_to(message):
         filters.append("dessert")
         category_found = True
     elif "lunch" in words or "dinner" in words:
-        # Lunch/dinner are usually savory main dishes
         pool = [r for r in pool if r["_savory"] or any(i["_key"] in ["rice", "pasta", "noodles"] for i in r["ingredients"])]
         filters.append("main dishes")
         category_found = True
-    # ------------------------------
 
     if not category_found:
         for diet in ("vegan", "vegetarian"):    
@@ -184,6 +184,7 @@ def reply_to(message):
     if words & {"surprise", "random"} and pool:
         return {"reply": "How about this one?", "recipes": [card(random.choice(pool))], "full": True}
 
+    # Check if we ONLY have a category/filter and no ingredients
     if have:
         ready, almost = find_by_ingredients(have, pool)
         combined = ready + almost
@@ -211,6 +212,7 @@ def reply_to(message):
             
         return {"reply": "I don't have any recipes with those ingredients. Try adding something else!"}
 
+    # If they typed a category but NO ingredients
     if filters:
         if not pool:
             return {"reply": "No recipes match that combination. Try removing a filter."}
