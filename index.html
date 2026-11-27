@@ -74,12 +74,6 @@
     const navHome = document.getElementById('nav-home');
     const navAll = document.getElementById('nav-all');
 
-    const botAvatarSvg = `
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a4 4 0 0 1 4 4v1h1a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-1v1a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-1H5a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h1v-1a4 4 0 0 1 4-4h1V5.73A2 2 0 0 1 10 4a2 2 0 0 1 2-2zm-3 9a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm6 0a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-6 5a4 4 0 0 0 6 0H9z" fill="#4a8b46"/>
-      </svg>
-    `;
-
     function scrollChat() { log.scrollTop = log.scrollHeight; }
 
     function addMsg(who, text) {
@@ -89,7 +83,7 @@
       if (who === 'bot') {
         const avatar = document.createElement('div');
         avatar.className = 'bot-avatar';
-        avatar.innerHTML = botAvatarSvg;
+        avatar.textContent = 'A'; // Changed to just the letter A
         row.appendChild(avatar);
       }
 
