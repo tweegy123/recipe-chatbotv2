@@ -28,6 +28,36 @@ body {
   display: none !important;
 }
 
+/* --- NEW: Nav Links --- */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 600;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--orange);
+}
+
+.nav-link.active {
+  border-bottom-color: var(--orange);
+  color: var(--orange);
+}
+
+/* Hide the submit button visually since Enter submits */
+.hidden-btn {
+  display: none;
+}
+/* ---------------------- */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -444,6 +474,10 @@ button.link {
 @media (max-width: 768px) {
   .navbar {
     padding: 16px 20px;
+  }
+  
+  .nav-links {
+    gap: 12px;
   }
 
   .hero {
