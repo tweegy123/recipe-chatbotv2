@@ -47,33 +47,21 @@ VOCAB = {i["_key"] for r in RECIPES for i in r["ingredients"]} - PANTRY
 def get_tools(r):
     text = (r["name"] + " " + " ".join(r["steps"])).lower()
     tools = set(["Knife & Chopping Board"])
-    
-    if any(w in text for w in ["boil", "simmer", "soup", "broth", "stew", "porridge", "congee", "blanch"]):
-        tools.add("Pot / Saucepan")
-    if any(w in text for w in ["fry", "stir-fry", "sear", "sauté", "pan-fry", "omelette", "scramble"]):
-        tools.add("Frying Pan / Skillet")
-    if any(w in text for w in ["bake", "roast", "oven"]):
-        tools.add("Baking Sheet / Oven")
-    if "steam" in text:
-        tools.add("Steamer")
-    if any(w in text for w in ["blend", "smoothie", "puree"]):
-        tools.add("Blender")
-    if any(w in text for w in ["mix", "whisk", "batter", "dough"]):
-        tools.add("Mixing Bowl & Whisk")
-    if any(w in text for w in ["grill", "bbq", "char"]):
-        tools.add("Grill Pan / BBQ")
-    
-    if len(tools) == 1:
-        tools.add("Frying Pan / Skillet")
+    if any(w in text for w in ["boil", "simmer", "soup", "broth", "stew", "porridge", "congee", "blanch"]): tools.add("Pot / Saucepan")
+    if any(w in text for w in ["fry", "stir-fry", "sear", "sauté", "pan-fry", "omelette", "scramble"]): tools.add("Frying Pan / Skillet")
+    if any(w in text for w in ["bake", "roast", "oven"]): tools.add("Baking Sheet / Oven")
+    if "steam" in text: tools.add("Steamer")
+    if any(w in text for w in ["blend", "smoothie", "puree"]): tools.add("Blender")
+    if any(w in text for w in ["mix", "whisk", "batter", "dough"]): tools.add("Mixing Bowl & Whisk")
+    if any(w in text for w in ["grill", "bbq", "char"]): tools.add("Grill Pan / BBQ")
+    if len(tools) == 1: tools.add("Frying Pan / Skillet")
     return sorted(list(tools))
 
 def card(r, have=None):
     data = {
-        "name": r["name"], 
-        "time": r["time"],
+        "name": r["name"], "time": r["time"],
         "ingredients": [f'{i["qty"]} {i["name"]}' for i in r["ingredients"]], 
-        "steps": r["steps"],
-        "tools": get_tools(r)
+        "steps": r["steps"], "tools": get_tools(r)
     }
     if have is not None:
         needed = [i for i in r["ingredients"] if i["_key"] not in PANTRY]
@@ -81,17 +69,18 @@ def card(r, have=None):
         data["missing"] = [i["name"] for i in needed if i["_key"] not in have]
     return data
 
+# --- UPDATED: Only find recipes where user has EVERYTHING ---
 def find_by_ingredients(have, pool):
-    ready, close = [], []
+    ready = []
     for r in pool:
         needed = [i for i in r["ingredients"] if i["_key"] not in PANTRY]
         hits = sum(i["_key"] in have for i in needed)
-        if hits:
-            missing = len(needed) - hits
-            (ready if missing == 0 else close).append((-hits, missing, r["time"], r))
-    ready.sort(key=lambda t: t[:3])
-    close.sort(key=lambda t: t[:3])
-    return [t[3] for t in ready], [t[3] for t in close]
+        # If hits == len(needed), it means the user has all required ingredients
+        if hits == len(needed):
+            ready.append(r)
+    ready.sort(key=lambda r: r["time"])
+    return ready
+# -------------------------------------------------------------
 
 def reply_to(message):
     toks = tokens(message)
@@ -110,12 +99,14 @@ def reply_to(message):
     if not toks or (words & {"hi", "hello", "hey", "help"} and not have):
         return {"reply": HELP}
 
+    # 1. Search by specific recipe name
     for r in RECIPES:
         distinct = {w for w in r["_name_words"] if w not in VOCAB and len(w) > 3}
         full = r["_name_words"] <= words
         if (full and (distinct or cue or not (have - r["_name_words"]))) or (distinct & words and (cue or not have)):
             return {"reply": f"Here is how to make {r['name']}:", "recipes": [card(r)], "full": True}
 
+    # 2. Diet / Flavor filters
     pool, filters = RECIPES, []
     for diet in ("vegan", "vegetarian"):    
         if diet in words:
@@ -145,25 +136,22 @@ def reply_to(message):
         pool = [r for r in pool if r["time"] <= limit]
         filters.append(f"under {limit} minutes")
 
+    # 3. Surprise me
     if words & {"surprise", "random"} and pool:
         return {"reply": "How about this one?", "recipes": [card(random.choice(pool))], "full": True}
 
+    # 4. Strict Ingredient Search (Only shows what you can cook right now)
     if have:
-        ready, close = find_by_ingredients(have, pool)
-        if ready or close:
+        ready = find_by_ingredients(have, pool)
+        if ready:
             names = sorted(KEYNAME[k] for k in have)
             text = ", ".join(names[:-1]) + (" and " if len(names) > 1 else "") + names[-1]
-            flavor_txt = f" ({', '.join(filters)})" if filters else ""
-            
-            if ready and close:
-                msg = f"With {text}{flavor_txt}, you can cook these right now, plus a few you are close to:"
-            elif ready:
-                msg = f"With {text}{flavor_txt}, you can cook these right now:"
-            else:
-                msg = f"Nothing is fully ready yet, but these use {text} and only need a few more ingredients:"
-            return {"reply": msg, "recipes": [card(r, have) for r in ready + close]}
-        return {"reply": "None of my recipes match those yet. Try adding another ingredient or changing the flavor."}
+            msg = f"With {text}, you can cook these right now:"
+            return {"reply": msg, "recipes": [card(r, have) for r in ready]}
+        
+        return {"reply": "I don't have a recipe that uses only those ingredients. Try adding more ingredients!"}
 
+    # 5. Browse by filter only
     if filters:
         if not pool:
             return {"reply": "No recipes match that combination. Try removing a filter."}
