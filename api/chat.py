@@ -14,7 +14,6 @@ PANTRY = {"salt", "pepper", "oil", "water", "sugar"}
 MEAT = {"chicken", "pork", "beef", "shrimp", "tuna", "bacon", "sausage", "ham", "fish", "salmon", "squid", "oyster", "bangus", "tilapia", "corned"}
 DAIRY_EGG = {"egg", "cheese", "milk", "butter", "cream", "honey"}
 
-# Added vegetable/veggie to category words
 CATEGORY_WORDS = {"breakfast", "lunch", "dinner", "snack", "snacks", "dessert", "desserts", "spicy", "sweet", "savory", "sour", "creamy", "vegan", "vegetarian", "vegetable", "vegetables", "veggie", "veggies"}
 
 HELP = ('Hi! Tell me what is in your kitchen. '
@@ -87,7 +86,11 @@ def find_by_ingredients(have, pool):
     matches.sort(key=lambda t: t[:3])
     ready = [t[3] for t in matches if t[1] == 0]
     almost = [t[3] for t in matches if t[1] > 0]
-    return ready, almost
+    
+    unique_ready = {r["name"]: r for r in ready}.values()
+    unique_almost = {r["name"]: r for r in almost}.values()
+    
+    return list(unique_ready), list(unique_almost)
 
 def reply_to(message):
     toks = tokens(message)
@@ -118,7 +121,9 @@ def reply_to(message):
     if not toks or (words & {"hi", "hello", "hey", "help"} and not have):
         return {"reply": HELP}
 
-    pool = RECIPES
+    unique_pool = {r["name"]: r for r in RECIPES}.values()
+    pool = list(unique_pool)
+    
     if banned:
         pool = [r for r in pool if not any(b in {i["_key"] for i in r["ingredients"]} for b in banned)]
 
@@ -128,7 +133,6 @@ def reply_to(message):
         full = r["_name_words"] <= words
         
         if (full and (distinct or cue or not (have - r["_name_words"]))) or (distinct & words and (cue or not have)):
-            # If they typed a category word, skip exact match (unless they explicitly asked for a recipe)
             if not cue and len(words) <= 2 and (words & CATEGORY_WORDS):
                 pass 
             else:
@@ -138,7 +142,6 @@ def reply_to(message):
     category_filters = []
     category_found = False
 
-    # Diet / Vegetables (Triggers a list of vegetarian/vegan recipes)
     if words & {"vegetable", "vegetables", "veggie", "veggies", "vegetarian", "vegan"}:
         if "vegan" in words or "veggie" in words or "veggies" in words:
             pool = [r for r in pool if r["_vegan"]]
@@ -155,22 +158,26 @@ def reply_to(message):
             pool = [r for r in pool if any(w in r["name"].lower() for w in bf_names) or (any(i["_key"] in bf_ings for i in r["ingredients"]) and r["time"] <= 30)]
             category_filters.append("breakfast")
             category_found = True
+            
         elif "snack" in words:
-            snack_names = {"lumpia", "turon", "quesadilla", "sandwich", "hash", "nachos", "smoothie", "spring", "fries", "snack"}
-            snack_ings = {"tortilla", "cheese", "potato", "wrapper", "bread"}
-            pool = [r for r in pool if any(w in r["name"].lower() for w in snack_names) or any(i["_key"] in snack_ings for i in r["ingredients"])]
+            # Strictly savory, bite-sized, or finger foods
+            snack_names = {"lumpia", "quesadilla", "sandwich", "hash", "nachos", "spring", "fries"}
+            pool = [r for r in pool if any(w in r["name"].lower() for w in snack_names)]
             category_filters.append("snacks")
             category_found = True
+            
         elif "dessert" in words:
+            # Strictly sweet treats (Turon and Smoothies belong here, not in snacks)
             d_names = {"cake", "flan", "maja", "turon", "halo", "biko", "palitaw", "taho", "buko", "pie", "leche", "pandan", "halaya", "pichi", "ensaymada", "sapin", "smoothie", "dessert"}
-            d_ings = {"condensed", "vanilla", "chocolate", "strawberry", "blueberry"}
-            pool = [r for r in pool if any(w in r["name"].lower() for w in d_names) or any(i["_key"] in d_ings for i in r["ingredients"])]
+            pool = [r for r in pool if any(w in r["name"].lower() for w in d_names)]
             category_filters.append("dessert")
             category_found = True
+            
         elif "lunch" in words or "dinner" in words:
-            main_names = {"adobo", "sinigang", "curry", "stir-fry", "roast", "fried rice", "spaghetti", "soup", "stew", "caldereta", "menudo", "afritada", "tinola", "kare-kare", "sisig", "bulalo", "pares", "bistek", "nilaga", "pochero", "humba", "kansi", "paksiw", "bicol", "laing", "pinakbet", "batchoy", "mami", "lomi", "sotanghon", "bihon", "canton", "palabok", "malabon", "ribs", "wellington", "bourguignon", "coq", "steak", "chop", "katsu", "teriyaki", "taco", "burrito", "lasagna", "risotto", "paella", "salpicao", "inasal", "lunch", "dinner"}
-            main_ings = {"rice", "pasta", "noodles", "pork", "beef", "chicken", "fish", "shrimp"}
-            pool = [r for r in pool if any(w in r["name"].lower() for w in main_names) or (any(i["_key"] in main_ings for i in r["ingredients"]) and r["time"] >= 20)]
+            # Actual viands and main dishes
+            main_names = {"adobo", "sinigang", "curry", "stir-fry", "roast", "stew", "caldereta", "menudo", "afritada", "tinola", "kare-kare", "sisig", "bulalo", "pares", "bistek", "nilaga", "pochero", "humba", "kansi", "paksiw", "bicol", "laing", "pinakbet", "batchoy", "mami", "lomi", "sotanghon", "bihon", "canton", "palabok", "malabon", "ribs", "wellington", "bourguignon", "coq", "steak", "chop", "katsu", "teriyaki", "taco", "burrito", "lasagna", "risotto", "paella", "salpicao", "inasal", "lunch", "dinner"}
+            main_ings = {"pork", "beef", "chicken", "fish", "shrimp"}
+            pool = [r for r in pool if any(w in r["name"].lower() for w in main_names) or (any(i["_key"] in main_ings for i in r["ingredients"]) and r["time"] >= 25)]
             category_filters.append("main dishes")
             category_found = True
 
@@ -188,7 +195,10 @@ def reply_to(message):
         else:
             if not pool:
                 return {"reply": f"No {' and '.join(category_filters)} recipes found."}
-            picks = sorted(pool, key=lambda r: r["time"])[:10]
+            
+            random.shuffle(pool)
+            picks = sorted(pool, key=lambda r: r["time"])[:15]
+            
             return {"reply": f"Here are some {' and '.join(category_filters)} options:", "recipes": [card(r) for r in picks]}
 
     # --- 3. FLAVOR FILTERS ---
