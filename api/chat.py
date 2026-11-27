@@ -14,7 +14,8 @@ PANTRY = {"salt", "pepper", "oil", "water", "sugar"}
 MEAT = {"chicken", "pork", "beef", "shrimp", "tuna", "bacon", "sausage", "ham", "fish", "salmon", "squid", "oyster", "bangus", "tilapia", "corned"}
 DAIRY_EGG = {"egg", "cheese", "milk", "butter", "cream", "honey"}
 
-CATEGORY_WORDS = {"breakfast", "lunch", "dinner", "snack", "dessert", "spicy", "sweet", "savory", "sour", "creamy", "vegan", "vegetarian"}
+# Added vegetable/veggie to category words
+CATEGORY_WORDS = {"breakfast", "lunch", "dinner", "snack", "snacks", "dessert", "desserts", "spicy", "sweet", "savory", "sour", "creamy", "vegan", "vegetarian", "vegetable", "vegetables", "veggie", "veggies"}
 
 HELP = ('Hi! Tell me what is in your kitchen. '
         'You can ask for a recipe by name, try "quick vegetarian meals", ask for a flavor like "spicy" or "creamy", or just say "surprise me".')
@@ -121,65 +122,92 @@ def reply_to(message):
     if banned:
         pool = [r for r in pool if not any(b in {i["_key"] for i in r["ingredients"]} for b in banned)]
 
+    # --- 1. EXACT RECIPE MATCH ---
     for r in pool:
         distinct = {w for w in r["_name_words"] if w not in VOCAB and len(w) > 3}
         full = r["_name_words"] <= words
+        
         if (full and (distinct or cue or not (have - r["_name_words"]))) or (distinct & words and (cue or not have)):
-            return {"reply": f"Here is how to make {r['name']}:", "recipes": [card(r)], "full": True}
+            # If they typed a category word, skip exact match (unless they explicitly asked for a recipe)
+            if not cue and len(words) <= 2 and (words & CATEGORY_WORDS):
+                pass 
+            else:
+                return {"reply": f"Here is how to make {r['name']}:", "recipes": [card(r)], "full": True}
 
-    filters = []
-    
+    # --- 2. CATEGORY & DIET FILTERS ---
+    category_filters = []
     category_found = False
-    if "breakfast" in words:
-        bf_names = {"pancake", "omelette", "silog", "tapsilog", "longsilog", "toast", "waffle", "oatmeal", "congee", "arroz"}
-        bf_ings = {"egg", "bread", "oats"} 
-        pool = [r for r in pool if any(w in r["name"].lower() for w in bf_names) or (any(i["_key"] in bf_ings for i in r["ingredients"]) and r["time"] <= 30)]
-        filters.append("breakfast")
-        category_found = True
-        
-    elif "snack" in words:
-        snack_names = {"lumpia", "turon", "quesadilla", "sandwich", "hash", "nachos", "smoothie", "spring", "fries"}
-        snack_ings = {"tortilla", "cheese", "potato", "wrapper", "bread"}
-        pool = [r for r in pool if any(w in r["name"].lower() for w in snack_names) or any(i["_key"] in snack_ings for i in r["ingredients"])]
-        filters.append("snacks")
-        category_found = True
-        
-    elif "dessert" in words:
-        d_names = {"cake", "flan", "maja", "turon", "halo", "biko", "palitaw", "taho", "buko", "pie", "leche", "pandan", "halaya", "pichi", "ensaymada", "sapin", "smoothie"}
-        d_ings = {"condensed", "vanilla", "chocolate", "strawberry", "blueberry"}
-        pool = [r for r in pool if any(w in r["name"].lower() for w in d_names) or any(i["_key"] in d_ings for i in r["ingredients"])]
-        filters.append("dessert")
-        category_found = True
-        
-    elif "lunch" in words or "dinner" in words:
-        main_names = {"adobo", "sinigang", "curry", "stir-fry", "roast", "fried rice", "spaghetti", "soup", "stew", "caldereta", "menudo", "afritada", "tinola", "kare-kare", "sisig", "bulalo", "pares", "bistek", "nilaga", "pochero", "humba", "kansi", "paksiw", "bicol", "laing", "pinakbet", "batchoy", "mami", "lomi", "sotanghon", "bihon", "canton", "palabok", "malabon", "ribs", "wellington", "bourguignon", "coq", "steak", "chop", "katsu", "teriyaki", "taco", "burrito", "lasagna", "risotto", "paella", "salpicao", "inasal"}
-        main_ings = {"rice", "pasta", "noodles", "pork", "beef", "chicken", "fish", "shrimp"}
-        pool = [r for r in pool if any(w in r["name"].lower() for w in main_names) or (any(i["_key"] in main_ings for i in r["ingredients"]) and r["time"] >= 20)]
-        filters.append("main dishes")
+
+    # Diet / Vegetables (Triggers a list of vegetarian/vegan recipes)
+    if words & {"vegetable", "vegetables", "veggie", "veggies", "vegetarian", "vegan"}:
+        if "vegan" in words or "veggie" in words or "veggies" in words:
+            pool = [r for r in pool if r["_vegan"]]
+            category_filters.append("vegan")
+        else:
+            pool = [r for r in pool if r["_vegetarian"]]
+            category_filters.append("vegetarian")
         category_found = True
 
     if not category_found:
-        for diet in ("vegan", "vegetarian"):    
-            if diet in words:
-                pool = [r for r in pool if r["_" + diet]]
-                filters.append(diet)
-                break
+        if "breakfast" in words:
+            bf_names = {"pancake", "omelette", "silog", "tapsilog", "longsilog", "toast", "waffle", "oatmeal", "congee", "arroz", "breakfast"}
+            bf_ings = {"egg", "bread", "oats"}
+            pool = [r for r in pool if any(w in r["name"].lower() for w in bf_names) or (any(i["_key"] in bf_ings for i in r["ingredients"]) and r["time"] <= 30)]
+            category_filters.append("breakfast")
+            category_found = True
+        elif "snack" in words:
+            snack_names = {"lumpia", "turon", "quesadilla", "sandwich", "hash", "nachos", "smoothie", "spring", "fries", "snack"}
+            snack_ings = {"tortilla", "cheese", "potato", "wrapper", "bread"}
+            pool = [r for r in pool if any(w in r["name"].lower() for w in snack_names) or any(i["_key"] in snack_ings for i in r["ingredients"])]
+            category_filters.append("snacks")
+            category_found = True
+        elif "dessert" in words:
+            d_names = {"cake", "flan", "maja", "turon", "halo", "biko", "palitaw", "taho", "buko", "pie", "leche", "pandan", "halaya", "pichi", "ensaymada", "sapin", "smoothie", "dessert"}
+            d_ings = {"condensed", "vanilla", "chocolate", "strawberry", "blueberry"}
+            pool = [r for r in pool if any(w in r["name"].lower() for w in d_names) or any(i["_key"] in d_ings for i in r["ingredients"])]
+            category_filters.append("dessert")
+            category_found = True
+        elif "lunch" in words or "dinner" in words:
+            main_names = {"adobo", "sinigang", "curry", "stir-fry", "roast", "fried rice", "spaghetti", "soup", "stew", "caldereta", "menudo", "afritada", "tinola", "kare-kare", "sisig", "bulalo", "pares", "bistek", "nilaga", "pochero", "humba", "kansi", "paksiw", "bicol", "laing", "pinakbet", "batchoy", "mami", "lomi", "sotanghon", "bihon", "canton", "palabok", "malabon", "ribs", "wellington", "bourguignon", "coq", "steak", "chop", "katsu", "teriyaki", "taco", "burrito", "lasagna", "risotto", "paella", "salpicao", "inasal", "lunch", "dinner"}
+            main_ings = {"rice", "pasta", "noodles", "pork", "beef", "chicken", "fish", "shrimp"}
+            pool = [r for r in pool if any(w in r["name"].lower() for w in main_names) or (any(i["_key"] in main_ings for i in r["ingredients"]) and r["time"] >= 20)]
+            category_filters.append("main dishes")
+            category_found = True
 
-        if words & {"spicy", "hot", "kick", "spice"}:
-            pool = [r for r in pool if r["_spicy"]]
-            filters.append("spicy")
-        if words & {"savory", "umami", "salty", "rich"}:
-            pool = [r for r in pool if r["_savory"]]
-            filters.append("savory")
-        if words & {"sour", "tangy", "acidic"}:
-            pool = [r for r in pool if r["_sour"]]
-            filters.append("sour")
-        if words & {"creamy"}:
-            pool = [r for r in pool if r["_creamy"]]
-            filters.append("creamy")
-        if words & {"sweet"}:
-            pool = [r for r in pool if r["_sweet"]]
-            filters.append("sweet")
+    if category_found:
+        if have:
+            ready, almost = find_by_ingredients(have, pool)
+            combined = (ready + almost)[:10]
+            if combined:
+                names = sorted(KEYNAME.get(k, k) for k in have)
+                text = ", ".join(names[:-1]) + (" and " if len(names) > 1 else "") + names[-1]
+                msg = f"Here are some {' and '.join(category_filters)} options using {text}:"
+                return {"reply": msg, "recipes": [card(r, have) for r in combined]}
+            else:
+                return {"reply": f"I don't have any {' and '.join(category_filters)} recipes with those ingredients."}
+        else:
+            if not pool:
+                return {"reply": f"No {' and '.join(category_filters)} recipes found."}
+            picks = sorted(pool, key=lambda r: r["time"])[:10]
+            return {"reply": f"Here are some {' and '.join(category_filters)} options:", "recipes": [card(r) for r in picks]}
+
+    # --- 3. FLAVOR FILTERS ---
+    filters = []
+    if words & {"spicy", "hot", "kick", "spice"}:
+        pool = [r for r in pool if r["_spicy"]]
+        filters.append("spicy")
+    if words & {"savory", "umami", "salty", "rich"}:
+        pool = [r for r in pool if r["_savory"]]
+        filters.append("savory")
+    if words & {"sour", "tangy", "acidic"}:
+        pool = [r for r in pool if r["_sour"]]
+        filters.append("sour")
+    if words & {"creamy"}:
+        pool = [r for r in pool if r["_creamy"]]
+        filters.append("creamy")
+    if words & {"sweet"}:
+        pool = [r for r in pool if r["_sweet"]]
+        filters.append("sweet")
 
     m = re.search(r"(\d+)\s*(?:min|minute)", message.lower())
     limit = int(m.group(1)) if m else (30 if words & {"quick", "fast"} else None)
@@ -190,6 +218,7 @@ def reply_to(message):
     if words & {"surprise", "random"} and pool:
         return {"reply": "How about this one?", "recipes": [card(random.choice(pool))], "full": True}
 
+    # --- 4. INGREDIENTS SEARCH ---
     if have:
         ready, almost = find_by_ingredients(have, pool)
         combined = ready + almost
