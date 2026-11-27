@@ -14475,5 +14475,38 @@
    "Stir-fry chicken, carrots, and cabbage.",
    "Add the noodles and soy sauce, and toss until well mixed."
   ]
- }
+ }, 
+ {
+  "name": "Scrambled Egg",
+  "time": 8,
+  "ingredients": [
+    {
+      "qty": "2",
+      "name": "egg"
+    },
+    {
+      "qty": "1 tbsp",
+      "name": "butter"
+    },
+    {
+      "qty": "1 tbsp",
+      "name": "milk"
+    },
+    {
+      "qty": "to taste",
+      "name": "salt"
+    },
+    {
+      "qty": "to taste",
+      "name": "pepper"
+    }
+  ],
+  "steps": [
+    "Crack the eggs into a bowl and add milk, salt, and pepper.",
+    "Whisk the mixture until well combined.",
+    "Melt the butter in a pan over low-medium heat.",
+    "Pour in the egg mixture and gently stir using a spatula.",
+    "Cook until the eggs are soft and fully set, then serve."
+  ]
+}
 ]
