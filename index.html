@@ -111,6 +111,7 @@
       font-weight: 500;
       font-size: 0.95rem;
       transition: 0.2s;
+      cursor: pointer;
     }
 
     .nav-item:hover {
@@ -204,7 +205,7 @@
     .bot-avatar {
       width: 45px;
       height: 45px;
-      background: #1a233a; /* Dark blue from the robot image */
+      background: #1a233a;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -341,17 +342,10 @@
           <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
           Home
         </a>
-        <a href="#" class="nav-item">
+        <!-- Changed to All Recipe and added onclick event -->
+        <a href="#" class="nav-item" onclick="loadAllRecipes(event)">
           <svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0h6v6h-6z"/></svg>
-          Categories
-        </a>
-        <a href="#" class="nav-item">
-          <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-          Favorites
-        </a>
-        <a href="#" class="nav-item">
-          <svg viewBox="0 0 24 24"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
-          About
+          All Recipe
         </a>
       </nav>
     </aside>
@@ -480,10 +474,8 @@
         if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         
-        // Add the bot's text reply and get the bubble element
         const bubble = addMsg('bot', data.reply);
         
-        // If there are recipes, attach them to the bot's bubble
         if (data.recipes && data.recipes.length > 0) {
           renderRecipes(bubble, data.recipes, data.full);
           scrollChat();
@@ -494,23 +486,50 @@
       }
     }
 
-    // Form submit
+    // --- NEW FUNCTION: Load All Recipes ---
+    async function loadAllRecipes(e) {
+      if (e) e.preventDefault();
+      
+      // Change active state
+      document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+      e.currentTarget.classList.add('active');
+
+      addMsg('user', "Show me all recipes");
+      
+      try {
+        const res = await fetch('/api/recipes');
+        const recipes = await res.json();
+        
+        const bubble = addMsg('bot', `Here are all ${recipes.length} recipes I know:`);
+        
+        if (recipes.length > 0) {
+          renderRecipes(bubble, recipes, false);
+          scrollChat();
+        }
+      } catch (err) {
+        addMsg('bot', "Sorry, I couldn't load the recipes right now.");
+      }
+    }
+
     form.addEventListener('submit', e => {
       e.preventDefault();
       const t = input.value.trim();
       if (!t) return;
       input.value = '';
+      
+      // Remove active state from sidebar when chatting
+      document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+      document.querySelector('.nav-item').classList.add('active'); // Set Home active
+      
       send(t);
     });
 
-    // Chips click
     document.getElementById('chips').addEventListener('click', e => {
       if (e.target.tagName === 'BUTTON') {
         send(e.target.textContent);
       }
     });
 
-    // Initial Greeting
     addMsg('bot', "Hi! I'm your Recipe Assistant!\nWhat would you like to cook today?");
 
   </script>
